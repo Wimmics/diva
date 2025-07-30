@@ -1,0 +1,78 @@
+.query-box {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+.results-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex: 1;
+    width: 100%;
+}
+
+.results-table {
+    border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pagination button:disabled {
+    background-color: #eee;
+    font-weight: bold;
+    cursor: default;
+}
+
+.pagination .dots {
+    padding: 5px 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+.vis-container {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+  }
+  
+.error-message {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* optional: white background with transparency */
+    border-radius: 8px;
+    display: none; /* show with JS as needed */
+    z-index: 10;
+  }
+  

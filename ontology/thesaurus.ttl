@@ -1,0 +1,935 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix diva_th: <http://ns.inria.fr/diva/thesaurus#> . 
+@prefix diva: <http://ns.inria.fr/diva/ontology#> .
+
+### ----- SKOS Concept Schemes ----- ######
+
+# ----- SKOS Concept Scheme for Visualization Marks
+diva_th:VisualizationMarkScheme a skos:ConceptScheme ;
+    skos:prefLabel "Visualization Mark Types"@en ;
+    skos:definition "A SKOS concept scheme defining common visualization mark types as per Vega-Lite."@en ;
+    dcterms:references "https://vega.github.io/vega-lite/docs/mark.html" .
+
+# Specific marks
+diva_th:Arc a skos:Concept, diva:Mark ;
+    skos:prefLabel "Arc"@en ;
+    skos:definition "A circular arc mark, often used in pie charts."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Area a skos:Concept, diva:Mark ;
+    skos:prefLabel "Area"@en ;
+    skos:definition "An area mark that displays quantitative data using filled areas."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Bar a skos:Concept, diva:Mark ;
+    skos:prefLabel "Bar"@en ;
+    skos:definition "A rectangular bar mark, typically used in bar charts."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:BoxPlot a skos:Concept, diva:Mark ;
+    skos:prefLabel "Box Plot"@en ;
+    skos:definition "A box plot mark for visualizing distributions with quartiles and outliers."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Circle a skos:Concept, diva:Mark ;
+    skos:prefLabel "Circle"@en ;
+    skos:definition "A circular mark, often used to represent points."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Geoshape a skos:Concept, diva:Mark ;
+    skos:prefLabel "Geoshape"@en ;
+    skos:definition "A geographic shape mark for visualizing geographic regions."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Image a skos:Concept, diva:Mark ;
+    skos:prefLabel "Image"@en ;
+    skos:definition "An image mark for embedding raster images."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Line a skos:Concept, diva:Mark ;
+    skos:prefLabel "Line"@en ;
+    skos:definition "A line mark for displaying data trends or connections."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Point a skos:Concept, diva:Mark ;
+    skos:prefLabel "Point"@en ;
+    skos:definition "A point mark, typically representing individual data points."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Rectangle a skos:Concept, diva:Mark ;
+    skos:prefLabel "Rectangle"@en ;
+    skos:definition "A rectangle mark, similar to bar but often used in heatmaps."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Rule a skos:Concept, diva:Mark ;
+    skos:prefLabel "Rule"@en ;
+    skos:definition "A rule mark used for lines such as axes or reference lines."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Square a skos:Concept, diva:Mark ;
+    skos:prefLabel "Square"@en ;
+    skos:definition "A square mark used to represent data points."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Text a skos:Concept, diva:Mark, diva:Channel, diva:UIElement ;
+    skos:prefLabel "Text"@en ;
+    skos:definition "A text mark for displaying labels or annotations."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:VisualizationMarkScheme ;
+    skos:inScheme diva_th:ChannelScheme ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Tick a skos:Concept, diva:Mark ;
+    skos:prefLabel "Tick"@en ;
+    skos:definition "A tick mark, often used for axis ticks."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+diva_th:Trail a skos:Concept, diva:Mark ;
+    skos:prefLabel "Trail"@en ;
+    skos:definition "A trail mark that connects points with lines, emphasizing path or direction."@en ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+# ----- SKOS Concept Scheme for Encodings -----
+
+### Encoding Scheme
+diva_th:ChannelScheme a skos:ConceptScheme ;
+    skos:prefLabel "Channel Scheme"@en ;
+    skos:definition "A SKOS scheme defining encoding channels used in visualizations. Definitions and classifications are based on Vega-Lite Grammar"@en ;
+    dcterms:references "https://vega.github.io/vega-lite/docs/encoding.html" .
+
+# Position Channels
+diva_th:PositionChannel a skos:Concept ;
+    skos:inScheme diva_th:ChannelScheme ;
+    skos:prefLabel "Position"@en ;
+    skos:definition "Position channels determine the position of the marks, or width/height of horizontal/vertical 'area' and 'bar' marks."@en .
+
+diva_th:X a skos:Concept, diva:Channel ;
+    skos:prefLabel "X coordinates"@en ;
+    skos:definition "X coordinates of the marks, or width of horizontal 'bar' and 'area' marks."@en ;
+    skos:broader diva_th:PositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Y a skos:Concept, diva:Channel ;
+    skos:prefLabel "Y coordinates"@en ;
+    skos:definition "Y coordinates of the marks, or height of vertical 'bar' and 'area' marks."@en ;
+    skos:broader diva_th:PositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Z a skos:Concept, diva:Channel ;
+    skos:prefLabel "Z coordinates"@en ;
+    skos:definition "Z coordinates of the marks, often used in 3D visualizations to represent depth."@en ;
+    skos:broader diva_th:PositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+# Polar Position Channels
+diva_th:PolarPositionChannel a skos:Concept ;
+    skos:inScheme diva_th:ChannelScheme ;
+    skos:prefLabel "Polar Position"@en ;
+    skos:definition "Polar position channels determine the position or interval on polar coordinates for 'arc' and 'text' marks."@en .
+
+diva_th:Theta a skos:Concept, diva:Channel ;
+    skos:prefLabel "Theta"@en ;
+    skos:definition "For arc marks, the arc length in radians. For text marks, polar coordinate angle in radians."@en ;
+    skos:broader diva_th:PolarPositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Radius a skos:Concept, diva:Channel ;
+    skos:prefLabel "Radius"@en ;
+    skos:definition "The outer radius in pixels of arc marks."@en ;
+    skos:broader diva_th:PolarPositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+# Geographic Position Channels
+diva_th:GeographicPositionChannel a skos:Concept ;
+    skos:inScheme diva_th:ChannelScheme ;
+    skos:prefLabel "Geographic Position"@en ;
+    skos:definition "Geographic position channels are used to encode geographic coordinate data via a projection."@en .
+
+diva_th:Longitude a skos:Concept, diva:Channel ;
+    skos:prefLabel "Longitude"@en ;
+    skos:definition "Longitude position of geographically projected marks."@en ;
+    skos:broader diva_th:GeographicPositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Latitude a skos:Concept, diva:Channel ;
+    skos:prefLabel "Latitude"@en ;
+    skos:definition "Latitude position of geographically projected marks."@en ;
+    skos:broader diva_th:GeographicPositionChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Polygon a skos:Concept, diva:Mark ;
+    skos:prefLabel "Polygon"@en ;
+    skos:definition "A polygon mark used to represent filled shapes with multiple vertices."@en ;
+    skos:broader diva:GeographicPositionChannel ;
+    skos:inScheme diva_th:VisualizationMarkScheme .
+
+# Mark Properties Channels
+
+diva_th:MarkPropertiesChannel a skos:Concept ;
+    skos:inScheme diva_th:ChannelScheme ;
+    skos:prefLabel "Mark Properties"@en ;
+    skos:definition "Mark properties channels map data fields to visual properties of the marks."@en .
+
+diva_th:Color a skos:Concept, diva:Channel ;
+    skos:prefLabel "Color"@en ;
+    skos:definition "Color of the marks -- either fill or stroke."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Opacity a skos:Concept, diva:Channel ;
+    skos:prefLabel "Opacity"@en ;
+    skos:definition "Opacity of the marks."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:FillOpacity a skos:Concept, diva:Channel ;
+    skos:prefLabel "Fill Opacity"@en ;
+    skos:definition "Fill opacity of the marks."@en ;
+    skos:broader diva_th:Opacity ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:StrokeOpacity a skos:Concept, diva:Channel ;
+    skos:prefLabel "Stroke Opacity"@en ;
+    skos:definition "Stroke opacity of the marks."@en ;
+    skos:broader diva_th:Opacity ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Width a skos:Concept, diva:Channel ;
+    skos:prefLabel "Width"@en ;
+    skos:definition "The width of the marks."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:StrokeDash a skos:Concept, diva:Channel ;
+    skos:prefLabel "Stroke Dash"@en ;
+    skos:definition "Stroke dash of the marks."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Size a skos:Concept, diva:Channel ;
+    skos:prefLabel "Size"@en ;
+    skos:definition "Size of the mark."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Angle a skos:Concept, diva:Channel ;
+    skos:prefLabel "Angle"@en ;
+    skos:definition "Rotation angle of point and text marks."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:Shape a skos:Concept, diva:Channel ;
+    skos:prefLabel "Shape"@en ;
+    skos:definition "Shape of the mark."@en ;
+    skos:broader diva_th:MarkPropertiesChannel ;
+    skos:inScheme diva_th:ChannelScheme .
+
+# Order Channel
+diva_th:Order a skos:Concept, diva:Channel ;
+    skos:prefLabel "Order"@en ;
+    skos:definition "Order of the marks."@en ;
+    skos:related diva_th:SortOrder ;
+    skos:inScheme diva_th:ChannelScheme .
+
+
+# ---- SKOS Concept Scheme for Scales ----
+# ScaleType scheme
+diva_th:ScaleTypeScheme a skos:ConceptScheme ;
+    skos:prefLabel "Scale Types"@en ;
+    skos:definition "Scales are functions that transform a domain of data values (numbers, dates, strings, etc.) to a range of visual values (pixels, colors, sizes). The Scale scheme defines the different types of scales."@en ;
+    dcterms:references "https://vega.github.io/vega-lite/docs/scale.html" .
+
+# Scale Types (examples)
+diva_th:LinearScale a skos:Concept, diva:ScaleType ;
+    skos:prefLabel "Linear"@en ;
+    skos:broader diva_th:ContinuousScale ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:LogScale a skos:Concept, diva:ScaleType ;
+    skos:prefLabel "Log"@en ;
+    skos:broader diva_th:ContinuousScale ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:OrdinalScale a skos:Concept, diva:ScaleType ;
+    skos:prefLabel "Ordinal"@en ;
+    skos:broader diva_th:DiscreteScale ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:BandScale a skos:Concept, diva:ScaleType ;
+    skos:prefLabel "Band"@en ;
+    skos:broader diva_th:DiscreteScale ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:QuantileScale a skos:Concept, diva:ScaleType ;
+    skos:prefLabel "Quantile"@en ;
+    skos:broader diva_th:DiscretizingScale ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+# Higher-level categories as broader concepts
+diva_th:ContinuousScale a skos:Concept ;
+    skos:prefLabel "Continuous Scale"@en ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:DiscreteScale a skos:Concept ;
+    skos:prefLabel "Discrete Scale"@en ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+diva_th:DiscretizingScale a skos:Concept ;
+    skos:prefLabel "Discretizing Scale"@en ;
+    skos:inScheme diva_th:ScaleTypeScheme .
+
+# ---- SKOS Concept Scheme for Field Types ----
+# Field types defined according to the proposition of Munzner (2015)
+diva_th:FieldTypeScheme a skos:ConceptScheme ;
+    skos:prefLabel "Field Type Scheme"@en ;
+    skos:definition "A SKOS scheme defining primary field (data) types used in visualizations."@en ;
+    dcterms:references 'Munzner, T. (2014). Visualization Analysis and Design (0 ed.). A K Peters/CRC Press. https://doi.org/10.1201/b17511' .
+
+diva_th:Categorical a skos:Concept, diva:Field ;
+    skos:inScheme diva_th:FieldTypeScheme ;
+    skos:prefLabel "Categorical"@en ;
+    skos:definition "Data type for categorical values, with no particular order."@en .
+
+diva_th:Ordered a skos:Concept, diva:Field ;
+    skos:inScheme diva_th:FieldTypeScheme ;
+    skos:prefLabel "Ordered"@en ;
+    skos:definition "Data type for values with a defined order."@en .
+
+diva_th:Ordinal a skos:Concept, diva:Field ;
+    skos:inScheme diva_th:FieldTypeScheme ;
+    skos:broader diva_th:Ordered ;
+    skos:prefLabel "Ordinal"@en ;
+    skos:definition "Data type for categorical values with a defined order or ranking."@en .
+
+diva_th:Quantitative a skos:Concept, diva:Field ;
+    skos:inScheme diva_th:FieldTypeScheme ;
+    skos:broader diva_th:Ordered ;
+    skos:prefLabel "Quantitative"@en ;
+    skos:definition "Data type for numerical values representing measured quantities."@en .
+
+diva_th:Temporal a skos:Concept, diva:Field ;
+    skos:inScheme diva_th:FieldTypeScheme ;
+    skos:broader diva_th:Ordinal ;
+    skos:prefLabel "Temporal"@en ;
+    skos:definition "Data type for date and time values representing temporal information."@en .
+
+
+### ----- SKOS Concept Scheme for Signals ------
+# Signals are visualization dependent and can evolve accordingly
+diva_th:SignalScheme a skos:ConceptScheme ;
+    skos:prefLabel "Signal Scheme"@en ;
+    skos:definition "A SKOS scheme defining interactive dynamic signals used to parameterize visualizations."@en .
+
+## Signals as Concepts
+diva_th:Gravity a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Gravity"@en ;
+    skos:definition "The gravity factor for graph layouts, affecting how nodes are pulled towards the center."@en .
+
+diva_th:Repulsion a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Repulsion"@en ;
+    skos:definition "The repulsion factor for graph layouts, affecting how nodes are pulled away from each other."@en .
+
+diva_th:LinkDistance a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Link Distance"@en ;
+    skos:definition "The distance between linked nodes in a graph visualization."@en .
+
+diva_th:Display a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Display"@en ;
+    skos:definition "A setting indicating whether the visualization is displayed or hidden."@en .
+
+diva_th:LockState a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Frozen State Signal"@en ;
+    skos:altLabel "Interaction Lock"@en, "Freeze Control"@en ;
+    skos:definition "A signal representing the frozen state of an interaction or visualization component, such as a paused animation, locked zoom level, or static brush selection."@en ;
+    skos:example "Pausing a time animation, locking zoom level, or fixing a brush extent."@en .
+
+diva_th:LockAnimation a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Lock Animation"@en ;
+    skos:definition "A signal that controls whether a time-based animation is enabled or disabled."@en ;
+    skos:broader diva_th:LockState .
+
+diva_th:LockZoom a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Lock Zoom"@en ;
+    skos:definition "A signal that prevents changes to the zoom level or pan state of a visualization."@en ;
+    skos:broader diva_th:LockState .
+
+diva_th:LockBrushing a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Lock Brushing"@en ;
+    skos:altLabel "Freeze Brush"@en ;
+    skos:definition "A signal that locks the current brush extent or selection range, preventing further modification."@en ;
+    skos:broader diva_th:LockState .
+
+diva_th:DataAggregation a skos:Concept, diva:SignalType ;
+    skos:inScheme diva_th:SignalScheme ;
+    skos:prefLabel "Data Aggregation" ;
+    skos:definition "A signal that motifies the data aggregation, such as spatial granularity, temporal granularity, or metric transformation (count, ratio, etc.)." .
+
+
+# ------ SKOS Concepts for Interaction ------
+# Use SKOS to define the types of views, marks, channels, and encodings
+
+### --- SKOS Concept Scheme for Interaction types ---
+
+### Events
+diva_th:EventScheme a skos:ConceptScheme ;
+    skos:prefLabel "Events"@en ;
+    skos:altLabel "Physical Actions"@en ;
+    skos:definition "Events are low-level user-triggered physical actions (e.g. click, hover, etc) that do not change directly the state of the visualization but may provide information or trigger view manipulation actions."@en .
+
+diva_th:ContextMenu a skos:Concept, diva:EventType ;
+    skos:prefLabel "Context Menu"@en ;
+    skos:definition "User attempts to open a context menu, typically by right-click or keyboard."@en ;
+    skos:inScheme diva_th:EventScheme . # faire la meme chose en bas
+
+diva_th:Click a skos:Concept, diva:EventType ;
+    skos:prefLabel "Click"@en ;
+    skos:definition "User clicks on a visualization element."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:Hover a skos:Concept, diva:EventType ;
+    skos:prefLabel "Hover"@en ;
+    skos:definition "User hovers over a visualization element."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:DoubleClick a skos:Concept, diva:EventType ;
+    skos:prefLabel "Double Click"@en ;
+    skos:definition "User double-clicks on a visualization element."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:MouseMove a skos:Concept, diva:EventType ;
+    skos:prefLabel "Mouse Move"@en ;
+    skos:definition "User moves the mouse within the visualization area."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:KeyDown a skos:Concept, diva:EventType ;
+    skos:prefLabel "Key Down"@en ;
+    skos:definition "User presses a key on the keyboard."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:Drag a skos:Concept, diva:EventType ;
+    skos:prefLabel "Drag"@en ;
+    skos:definition "User drags a visualization element."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:Drop a skos:Concept, diva:EventType ;
+    skos:prefLabel "Drop"@en ;
+    skos:definition "User drops a visualization element."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+diva_th:Scroll a skos:Concept, diva:EventType ;
+    skos:prefLabel "Scroll"@en ;
+    skos:definition "User scrolls the visualization."@en ;
+    skos:inScheme diva_th:EventScheme .
+
+
+### View Manipulation
+## View manipulation are analytical steps that the user can perform on the visualization (K. Xu, S. Attfield, T. J. Jankun-Kelly, A. Wheat, P. H. Nguyen and N. Selvaraj, "Analytic Provenance for Sensemaking: A Research Agenda," in IEEE Computer Graphics and Applications, vol. 35, no. 3, pp. 56-64, May-June 2015, doi: 10.1109/MCG.2015.50.). The classification of actions is based on the work of Munzner (2015), including actions that manipulate the visualization, change its state, or provide additional information.
+
+diva_th:ViewManipulationScheme a skos:ConceptScheme ;
+    skos:prefLabel "View Manipulation"@en ;
+    skos:definition "Direct manipulations with the visualization, such as zooming and panning."@en ;
+    dcterms:references 'Munzner, T. (2014). Visualization Analysis and Design (0 ed.). A K Peters/CRC Press. https://doi.org/10.1201/b17511'.
+
+diva_th:ChangeOverTime a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Change Over Time"@en ;
+    skos:definition "User animates a visualization element over time."@en ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Select a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Select"@en ;
+    skos:definition "User selects a visualization element."@en ;
+    skos:related diva_th:Deselect ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Highlight a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Highlight"@en ;
+    skos:definition "User highlights a visualization element."@en ;
+    skos:related diva_th:Select ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+
+
+diva_th:Brush a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Brushing"@en ;
+    skos:definition "An interaction technique that allows users to select or highlight a subset of data items within a visualization by directly manipulating graphical elements, such as dragging a selection box or hovering."@en ;
+    skos:related diva_th:Select ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+# -- Navigation actions
+diva_th:Navigate a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Navigate"@en ;
+    skos:definition "Navigation include methods that alter a user's viewpoint, such as zooming, panning and rotating."@en ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Zoom a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Zoom"@en ;
+    skos:definition "User interaction that increases or decreases the scale of the visualization to reveal more or less detail. It can be broken down into semantic and geometric zooming."@en ;
+    skos:broader diva_th:Navigate  ;
+    skos:narrower diva_th:GeometricZoom, diva_th:SemanticZoom ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:GeometricZoom a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Geometric Zoom"@en ;
+    skos:definition "User zooms in or out of a visualization using geometric transformations."@en ;
+    skos:broader diva_th:Zoom ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:SemanticZoom a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Semantic Zoom"@en ;
+    skos:definition "User zooms in or out of a visualization to change the level of detail or abstraction."@en ;
+    skos:broader diva_th:Zoom ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Translate a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Translate"@en ;
+    skos:definition "User interaction that shifts the visible area of the visualization without changing the scale, typically to explore adjacent regions."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Rotate a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Rotate"@en ;
+    skos:definition "User interaction that changes the orientation of the visualization by rotating its view, typically to explore spatial relationships."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Slice a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Slice"@en ;
+    skos:definition "User interaction that reveals a specific cross-section or subset of data by interactively slicing through a multidimensional or layered visualization."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Project a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Project"@en ;
+    skos:definition "User interaction that changes the spatial mapping or dimensional reduction of the visualization, such as switching between 2D and 3D views or applying a different coordinate projection."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+# Other manipulation techniques (not in Munzner's classification)
+
+diva_th:Switch a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Switch"@en ;
+    skos:definition "User switches between available elements in the dashboard, including views and datasets."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+diva_th:Restore a skos:Concept, diva:ViewManipulationType ;
+    skos:prefLabel "Restore"@en ;
+    skos:definition "User restores the visualization's history to a previous state. This is useful for visualizations that keep an history log."@en ;
+    skos:broader diva_th:Navigate ;
+    skos:inScheme diva_th:ViewManipulationScheme .
+
+# diva_th:Switch sounds like the import action, however, it is more about switching between different views or datasets already existing in the dashboard or visualization.
+
+
+### Actions
+diva_th:ActionScheme a skos:ConceptScheme ;
+    skos:prefLabel "Actions"@en ;
+    skos:note "Actions are cognitive sub-tasks performed to answer a domain-related task or competency question."@en ;
+    dcterms:references 'Munzner, T. (2014). Visualization Analysis and Design (0 ed.). A K Peters/CRC Press. https://doi.org/10.1201/b17511' .
+
+# Query actions
+diva_th:Query a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Query"@en ;
+    skos:definition "Once a target or set of targets for a search has been found, the user queries these targets to learn more information (details-on-demand)."@en ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Identify a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Identify"@en ;
+    skos:definition "User query the characteristics of one or multiple targets."@en ;
+    skos:broader diva_th:Query ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Compare a skos:Concept, diva:ActionType ;   
+    skos:prefLabel "Compare"@en ;
+    skos:definition "User compares two or more targets."@en ;
+    skos:broader diva_th:Query ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Summarize a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Summarize"@en ;
+    skos:definition "User obtains a comprehensive view of everything or a set of targets."@en ;
+    skos:broader diva_th:Query ;
+    skos:inScheme diva_th:ActionScheme .
+
+## Produce tasks
+diva_th:Produce a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Produce"@en ;
+    skos:definition "User produces new visualizations or new data."@en ;
+    skos:inScheme diva_th:ActionScheme .
+
+# Transform actions
+diva_th:Derive a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Derive"@en ;
+    skos:definition "User derives new visualization or data by applying a transformation to the data, such as filtering or aggregating."@en ;
+    skos:broader diva_th:Produce ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Aggregate a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Aggregate"@en ;
+    skos:definition "Aggregate concerns methods that change the granularity of visualization elements."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:GroupBy a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Group By"@en ;
+    skos:definition "Aggregation that define the data field used to group data."@en ;
+    skos:broader diva_th:Aggregate ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Granularity a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Granularity"@en ;
+    skos:definition "Changes the level of granularity used to group the data (e.g., by hour, day, or category) in a specific data field."@en ;
+    skos:broader diva_th:Aggregate ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:MetricTransform a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Metric Transform"@en ;
+    skos:definition "Changes the metric used to aggregate the data (e.g., from sum to average)."@en ;
+    skos:broader diva_th:Aggregate ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Filter a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Filter"@en ;
+    skos:definition "User filters the data to focus on a specific subset."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Sort a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Sort"@en ;
+    skos:definition "User sorts the data by a specific field or property."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Limit a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Limit"@en ;
+    skos:definition "User limits the number of elements displayed in the visualization."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Join a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Join"@en ;
+    skos:definition "User joins two or more datasets to create a new visualization."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Sample a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Sample"@en ;
+    skos:definition "User samples a subset of the data for analysis."@en ;
+    skos:broader diva_th:Derive ;
+    skos:inScheme diva_th:ActionScheme .
+
+
+diva_th:Annotate a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Annotate"@en ;
+    skos:definition "User creates an annotation on a visualization."@en ;
+    skos:broader diva_th:Produce ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Record a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Record"@en ;
+    skos:definition "User captures the current state of the visualization as a persistent artifact, such as an image or video."@en ;
+    skos:broader diva_th:Produce ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Import a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Import"@en ;
+    skos:definition "User imports new elements into the visualization, including new data elements."@en ;
+    skos:broader diva_th:Produce ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:DetailsOnDemand a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Details-on-demand"@en ;
+    skos:definition "User requests and receives additional information about a specific visualization element, typically by hovering, clicking, or focusing on it."@en ;
+    skos:broader diva_th:Produce ;
+    skos:inScheme diva_th:ActionScheme .
+
+
+## Search tasks
+## Interaction with signals can be a part of the search tasks. For instance, to find something in the visualizaiton, the user may have to adjust the gravity or repulsion, thus providing a different point of view, that might help them perform the action
+diva_th:Search a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Search"@en ;
+    skos:definition "User searches for data or elements in the visualization. Search tasks are broken down into four sub-tasks according to whether the user knows what they are looking for and where it is located."@en ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Explore a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Explore"@en ;
+    skos:definition "Users explore the data to find an unknown target in an unknown location. It entails searching for characteristics without regard to their location."@en ;
+    skos:broader diva_th:Search;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Lookup a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Lookup"@en ;
+    skos:definition "User knows both what they're looking for and where."@en ;
+    skos:broader diva_th:Search ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Locate a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Locate"@en ;
+    skos:definition "User locates a specific data point or element in the visualization. The subtasks requires finding a known target in an unknown location."@en ;
+    skos:broader diva_th:Search ;
+    skos:inScheme diva_th:ActionScheme .
+
+diva_th:Browse a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Browse"@en ;
+    skos:definition "User browses through the visualization searching for one or more items that fit some kind of specification. It entails looking for an unknown target in a known location."@en ;
+    skos:broader diva_th:Search ;
+    skos:inScheme diva_th:ActionScheme .
+
+# Other actions (not in Munzner's list)
+
+diva_th:Delete a skos:Concept, diva:ActionType ;
+    skos:prefLabel "Delete"@en ;
+    skos:definition "Delete an element from the dashboard."@en ;
+    skos:inScheme diva_th:ActionScheme .
+
+# ------ SKOS Concepts for Sort function ------
+# SKOS Concepts to describe Sort function
+diva_th:SortOrderScheme a skos:ConceptScheme ;
+    skos:prefLabel "Sort Order Scheme"@en ;
+    skos:note "Defines the valid sort directions (ascending or descending)."@en .
+
+# -- Sort oder subtypes
+diva_th:Ascending a skos:Concept, diva_th:Sort ;
+    skos:prefLabel "Ascending"@en ;
+    skos:definition "Sort in increasing order."@en ;
+    skos:inScheme diva_th:SortOrderScheme .
+
+diva_th:Descending a skos:Concept, diva_th:Sort ;
+    skos:prefLabel "Descending"@en ;
+    skos:definition "Sort in decreasing order."@en ;
+    skos:inScheme diva_th:SortOrderScheme .
+
+diva_th:Alphabetically a skos:Concept, diva_th:Sort ;
+    skos:prefLabel "Alphabetically"@en ;
+    skos:definition "Sort in alphabetical order."@en ;
+    skos:inScheme diva_th:SortOrderScheme .
+
+
+## --- User Interface (UI) Elements Scheme ----
+
+diva_th:UIElementScheme a skos:ConceptScheme ;
+    skos:prefLabel "UI Elements"@en ;
+    skos:definition "User interface elements used in visualizations, such as buttons, sliders, and dropdowns."@en ;
+    dcterms:references 'Rocha Silva, T., Hak, J.-L., & Winckler, M. (2017). A FORMAL ONTOLOGY FOR DESCRIBING INTERACTIVE BEHAVIORS ON USER INTERFACES. International Journal of Semantic Computing. https://hal.science/hal-02145965' .
+
+# Information components
+diva_th:InformationComponent a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Information Component"@en ;
+    skos:definition "A component that displays information to the user, such as text or images."@en ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Tooltip a skos:Concept, diva:UIElement, diva_th:Channel ;
+    skos:prefLabel "Tooltip"@en ;
+    skos:definition "A small pop-up box that provides additional information when the user hovers over an element."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme ;
+    skos:inScheme diva_th:ChannelScheme .
+
+diva_th:MessageBox a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Message Box"@en ;
+    skos:definition "A dialog box that displays a message to the user, often used for alerts or confirmations."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:ProgressBar a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Progress Bar"@en ;
+    skos:definition "A visual indicator that shows the progress of an ongoing operation."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Label a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Label"@en ;
+    skos:definition "A text element that provides a description or title for another UI element."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Notification a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Notification"@en ;
+    skos:definition "A message that informs the user about an event or change in the system."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+# diva_th:Legend a skos:Concept, diva:UIElement ;
+#     skos:prefLabel "Legend"@en ;
+#     skos:definition "A component that explains the meaning of symbols or colors used in the visualization."@en ;
+#     skos:broader diva_th:InformationComponent ;
+#     skos:inScheme diva_th:UIElementScheme .
+
+diva_th:DetailsView a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Details View"@en ;
+    skos:definition "A component that provides additional information about a specific element when requested by the user."@en ;
+    skos:broader diva_th:InformationComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+
+# Navigational components
+diva_th:NavigationalComponent a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Navigational Component"@en ;
+    skos:definition "A component that allows users to navigate through the interface, such as buttons or links."@en ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Breadcrumb a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Breadcrumb"@en ;
+    skos:definition "A navigational aid that shows the user's current location within the interface hierarchy by providing a clickable trail of pages."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:ImageCarousel a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Image Carousel"@en ;
+    skos:definition "A component that displays a series of images in a rotating carousel format."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Menu a skos:Concept, diva:UIElement ; 
+    skos:prefLabel "Menu"@en ;
+    skos:definition "A component that provides a list of options or actions for the user to choose from."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Pagination a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Pagination"@en ;
+    skos:definition "A component that allows users to navigate through multiple pages of content."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:MenuItem a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Menu Item"@en ;
+    skos:definition "An individual item within a menu that represents an action or option."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Link a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Link"@en ;
+    skos:definition "A clickable element that navigates to another page or resource."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Icon a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Icon"@en ;
+    skos:definition "A graphical representation of an action or object, often used to enhance the user interface."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Tag a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Tag"@en ;
+    skos:definition "A label or keyword associated with a piece of content, used for categorization or filtering."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:SearchField a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Search Field"@en ;
+    skos:definition "An input field that allows users to enter search queries to find specific content within the visualization."@en ;
+    skos:broader diva_th:NavigationalComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+# Container components
+diva_th:ContainerComponent a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Container Component"@en ;
+    skos:definition "A component that groups other components together, such as panels or sections."@en ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:FieldSet a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Fieldset"@en ;
+    skos:definition "A container that groups related form elements together, often with a legend or title."@en ;
+    skos:broader diva_th:ContainerComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Accordion a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Accordion"@en ;
+    skos:definition "A UI component that allows users to expand and collapse sections of content."@en ;
+    skos:broader diva_th:ContainerComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:TabsBar a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Tabs Bar"@en ;
+    skos:definition "A component that allows users to switch between different views or sections of content using tabs."@en ;
+    skos:broader diva_th:ContainerComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Window a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Browser Window"@en ;
+    skos:definition "A container that represents the entire browser window, including the address bar and navigation controls."@en ;
+    skos:broader diva_th:ContainerComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+
+# Input components
+diva_th:InputComponent a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Input Component"@en ;
+    skos:definition "A component that allows users to input data or interact with the visualization, such as text fields or sliders."@en ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:RadioButton a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Radio Button"@en ;
+    skos:definition "A UI element that allows users to select one option from a set of mutually exclusive options."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:ListBox a skos:Concept, diva:UIElement ;
+    skos:prefLabel "List Box"@en ;
+    skos:definition "A UI element that displays a list of options from which the user can select one or more items."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:TextField a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Text Field"@en ;
+    skos:definition "An input field that allows users to enter text data."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:DropdownList a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Dropdown List"@en ;
+    skos:definition "A UI element that allows users to select an option from a list that appears when the user clicks on it."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:DropdownButton a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Dropdown Button"@en ;
+    skos:definition "A button that, when clicked, displays a dropdown menu with options for the user to select."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:ToggleSwitch a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Toggle Switch"@en ;
+    skos:definition "A UI element that allows users to switch between two states, such as on/off or enabled/disabled."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Checkbox a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Checkbox"@en ;
+    skos:definition "A UI element that allows users to select one or more options from a set of choices."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .    
+
+diva_th:Button a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Button"@en ;
+    skos:definition "A clickable element that performs an action when clicked."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .    
+
+diva_th:Calendar a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Calendar"@en ;
+    skos:definition "A UI component that allows users to select dates or view a calendar."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:Slider a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Slider"@en ;
+    skos:definition "A UI component that allows users to adjust a value by sliding a handle along a track."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .
+
+diva_th:NumericStepper a skos:Concept, diva:UIElement ;
+    skos:prefLabel "Numeric Stepper"@en ;
+    skos:definition "A UI component that allows users to increment or decrement a numeric value using up and down buttons."@en ;
+    skos:broader diva_th:InputComponent ;
+    skos:inScheme diva_th:UIElementScheme .

@@ -1,0 +1,3298 @@
+[
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 1,
+    "date": "24/1/2020 at 10:22:23",
+    "time": 1579857743399,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "map"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "attractiveness",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 2,
+    "date": "24/1/2020 at 10:22:46",
+    "time": 1579857766707,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "legend"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "attractiveness",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 3,
+    "date": "24/1/2020 at 10:28:13",
+    "time": 1579858093873,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "clock"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 4,
+    "date": "24/1/2020 at 10:30:29",
+    "time": 1579858229965,
+    "eventInfo": {
+      "code": "modify",
+      "item": "space"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 5,
+    "date": "24/1/2020 at 10:31:14",
+    "time": 1579858274446,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "modes"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 6,
+    "date": "24/1/2020 at 10:31:21",
+    "time": 1579858281349,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "activity"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 7,
+    "date": "24/1/2020 at 10:32:14",
+    "time": 1579858334724,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 8,
+    "date": "24/1/2020 at 10:38:50",
+    "time": 1579858730438,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "05",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 9,
+    "date": "24/1/2020 at 10:39:31",
+    "time": 1579858771472,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 10,
+    "date": "24/1/2020 at 10:42:35",
+    "time": 1579858955086,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "05",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 11,
+    "date": "24/1/2020 at 10:43:30",
+    "time": 1579859010603,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 12,
+    "date": "24/1/2020 at 10:43:44",
+    "time": 1579859024792,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 13,
+    "date": "24/1/2020 at 10:46:39",
+    "time": 1579859199208,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "clock"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 14,
+    "date": "24/1/2020 at 10:46:43",
+    "time": 1579859203454,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "modes"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 15,
+    "date": "24/1/2020 at 10:47:03",
+    "time": 1579859223388,
+    "eventInfo": {
+      "code": "modify",
+      "item": "space"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 16,
+    "date": "24/1/2020 at 10:47:33",
+    "time": 1579859253508,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 17,
+    "date": "24/1/2020 at 10:49:06",
+    "time": 1579859346221,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "06",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 18,
+    "date": "24/1/2020 at 10:49:21",
+    "time": 1579859361988,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "05",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 19,
+    "date": "24/1/2020 at 10:51:01",
+    "time": 1579859461953,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 20,
+    "date": "24/1/2020 at 10:55:31",
+    "time": 1579859731158,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 21,
+    "date": "24/1/2020 at 10:56:37",
+    "time": 1579859797655,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "05",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_2",
+    "index": 22,
+    "date": "24/1/2020 at 10:57:55",
+    "time": 1579859875816,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "05",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 23,
+    "date": "24/1/2020 at 10:58:20",
+    "time": 1579859900674,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 24,
+    "date": "24/1/2020 at 10:58:59",
+    "time": 1579859939819,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "01",
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 25,
+    "date": "24/1/2020 at 11:01:43",
+    "time": 1579860103741,
+    "eventInfo": {
+      "code": "modify",
+      "item": "activity",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 26,
+    "date": "24/1/2020 at 11:13:16",
+    "time": 1579860796271,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "04"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 27,
+    "date": "24/1/2020 at 11:16:19",
+    "time": 1579860979147,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 28,
+    "date": "24/1/2020 at 11:18:36",
+    "time": 1579861116407,
+    "eventInfo": {
+      "code": "modify",
+      "item": "freeze",
+      "value": true,
+      "dimension": "time"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": true,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 29,
+    "date": "24/1/2020 at 11:18:41",
+    "time": 1579861121614,
+    "eventInfo": {
+      "code": "modify",
+      "item": "freeze",
+      "value": true,
+      "dimension": "space"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": true,
+          "ftime": true,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 30,
+    "date": "24/1/2020 at 11:18:43",
+    "time": 1579861123791,
+    "eventInfo": {
+      "code": "modify",
+      "item": "freeze",
+      "value": true,
+      "dimension": "zoom"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": true,
+          "ftime": true,
+          "fzoom": true,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 31,
+    "date": "24/1/2020 at 11:18:45",
+    "time": 1579861125300,
+    "eventInfo": {
+      "code": "modify",
+      "item": "freeze",
+      "value": false,
+      "dimension": "space"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": true,
+          "fzoom": true,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 32,
+    "date": "24/1/2020 at 11:18:46",
+    "time": 1579861126142,
+    "eventInfo": {
+      "code": "modify",
+      "item": "freeze",
+      "value": false,
+      "dimension": "time"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "category": null,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": true,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "legend",
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 33,
+    "date": "24/1/2020 at 11:18:47",
+    "time": 1579861127388,
+    "eventInfo": {
+      "code": "create",
+      "item": "remove",
+      "value": "chord-diagram"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 34,
+    "date": "24/1/2020 at 11:18:54",
+    "time": 1579861134800,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "chord-diagram"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 35,
+    "date": "24/1/2020 at 11:19:19",
+    "time": 1579861159470,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "activity"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "home"
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 36,
+    "date": "24/1/2020 at 11:19:51",
+    "time": 1579861191723,
+    "eventInfo": {
+      "code": "modify",
+      "item": "activity",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 37,
+    "date": "24/1/2020 at 11:20:26",
+    "time": 1579861226922,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 38,
+    "date": "24/1/2020 at 11:20:55",
+    "time": 1579861255528,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "activity"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "home"
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 39,
+    "date": "24/1/2020 at 11:21:09",
+    "time": 1579861269223,
+    "eventInfo": {
+      "code": "modify",
+      "item": "activity",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 40,
+    "date": "24/1/2020 at 11:21:22",
+    "time": 1579861282489,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 41,
+    "date": "24/1/2020 at 11:21:42",
+    "time": 1579861302074,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "aggregate",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 42,
+    "date": "24/1/2020 at 11:22:46",
+    "time": 1579861366254,
+    "eventInfo": {
+      "code": "modify",
+      "item": "time",
+      "value": "individual"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "individual",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 43,
+    "date": "24/1/2020 at 11:23:41",
+    "time": 1579861421112,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": false,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "individual",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 44,
+    "date": "24/1/2020 at 11:23:41",
+    "time": 1579861421885,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "time": "individual",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 45,
+    "date": "24/1/2020 at 11:30:16",
+    "time": 1579861816304,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "children": [],
+          "sectors": [
+            "04"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 46,
+    "date": "24/1/2020 at 11:32:28",
+    "time": 1579861948091,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "children": [],
+          "sectors": [
+            "05"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 47,
+    "date": "24/1/2020 at 11:38:45",
+    "time": 1579862325421,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "children": [],
+          "sectors": [
+            "04"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 48,
+    "date": "24/1/2020 at 11:41:24",
+    "time": 1579862484264,
+    "eventInfo": {
+      "code": "modify",
+      "item": "sector",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "general",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "chord-diagram",
+          "children": [],
+          "sectors": [
+            "01"
+          ],
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 49,
+    "date": "24/1/2020 at 11:43:09",
+    "time": 1579862589149,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "map"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "interactive_map",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 17,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 50,
+    "date": "24/1/2020 at 11:43:24",
+    "time": 1579862604856,
+    "eventInfo": {
+      "code": "modify",
+      "item": "indicator",
+      "value": "presence"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "presence",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 17,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 51,
+    "date": "24/1/2020 at 11:43:33",
+    "time": 1579862613946,
+    "eventInfo": {
+      "code": "modify",
+      "item": "rep",
+      "value": "ratio"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "presence",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 17,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 52,
+    "date": "24/1/2020 at 11:43:51",
+    "time": 1579862631792,
+    "eventInfo": {
+      "code": "modify",
+      "item": "time",
+      "value": "individual"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "presence",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "individual",
+          "children": [],
+          "sectors": 0,
+          "period": 17,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_goyave",
+    "parentIndex": 0,
+    "window": "cont_1",
+    "index": 53,
+    "date": "24/1/2020 at 11:43:58",
+    "time": 1579862638587,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "legend"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_goyave-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "presence",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_1",
+          "depiction": "map",
+          "time": "individual",
+          "children": [],
+          "sectors": 0,
+          "period": 17,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "ratio",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details",
+            "legend"
+          ],
+          "category": null
+        },
+        "grenoble-tableau_goyave-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "modes",
+          "type": "view",
+          "space": "individual",
+          "partition": "D30",
+          "client": "tableau_goyave",
+          "window": "cont_2",
+          "depiction": "clock",
+          "time": "aggregate",
+          "children": [],
+          "sectors": "04",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  }
+]

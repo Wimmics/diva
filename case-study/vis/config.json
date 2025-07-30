@@ -1,0 +1,101 @@
+[
+    {
+        "label": "What are the sequence of actions of a specific user?",
+        "queryFile": "query1.rq", 
+        "muvin": {
+            "encoding": {
+                "nodes": {
+                    "field": "user",
+                    "label": "User"
+                },
+                "links": {
+                    "field": "entityName",
+                    "browse": { "field": null },
+                    "title": { "field": "entityName" },
+                    "label": "Entity"
+                },
+                "temporal": {
+                    "field": "step",
+                    "label": "Step"
+                },
+                "color": {
+                    "field": "actionType",
+                    "type": "nominal",
+                    "label": "Action Type",
+                    "scale": {
+                        "domain": null,
+                        "range": null
+                    },
+                    "legend": {
+                        "display": true
+                    }
+                } 
+            },
+            "height": 400,
+            "width": 2000
+        }
+    },
+    {
+        "label": "Do users exhibit similar patterns in their sequences of actions?",
+        "queryFile": "query2.rq",
+        "muvin": { 
+            "encoding": {
+                "nodes": {
+                    "field": "user",
+                    "label": "User"
+                },
+                "links": {
+                    "field": "entityName",
+                    "title": { "field": "entityName" },
+                    "label": "Visualization Technique"
+                },
+                "temporal": {
+                    "field": "step",
+                    "label": "Step"
+                },
+                "color": {
+                    "field": "actionType",
+                    "type": "nominal",
+                    "label": "Action Type",
+                    "scale": {
+                        "domain": null,
+                        "range": null
+                    },
+                    "legend": {
+                        "display": true
+                    }
+                }
+            },
+            "width": 2000,
+            "height": 900
+        }
+    },
+    {
+        "label": "Are there observable trends on the way visualizations are used by the users?",
+        "queryFile": "query3.rq",
+        "muvin": null,
+        "sankey": null,
+        "mgexplorer": null,
+        "barchart": {
+            "encoding": {
+                "x": { 
+                    "field": "user",
+                    "label": "User"
+                },
+                "y": { 
+                    "field": "repetitions", 
+                    "label": "Number of Repetitions"
+                },
+                "color": { 
+                    "field": "actionType",
+                    "label": "Action Type" 
+                },
+                "group": { 
+                    "field": "visType",
+                    "label": "Visualization Type" 
+                }
+            }
+        }
+    }
+    
+]

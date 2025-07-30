@@ -1,0 +1,2149 @@
+@prefix : <http://ns.inria.fr/diva/data#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix diva: <http://ns.inria.fr/diva/ontology#> .
+@prefix diva_th: <http://ns.inria.fr/diva/thesaurus#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:explorationPath_user_1 a diva:ExplorationPath ;
+    dcterms:title "Exploration Path for user_1" ;
+    rdf:_1 :action_user_1_global_1 ;
+    rdf:_10 :action_user_1_modify_10 ;
+    rdf:_11 :action_user_1_remove_11 ;
+    rdf:_12 :action_user_1_create_12 ;
+    rdf:_13 :action_user_1_modify_13 ;
+    rdf:_14 :action_user_1_modify_14 ;
+    rdf:_15 :action_user_1_remove_15 ;
+    rdf:_16 :action_user_1_create_16 ;
+    rdf:_17 :action_user_1_modify_17 ;
+    rdf:_18 :action_user_1_remove_18 ;
+    rdf:_19 :action_user_1_create_19 ;
+    rdf:_2 :action_user_1_modify_2 ;
+    rdf:_20 :action_user_1_modify_20 ;
+    rdf:_21 :action_user_1_modify_21 ;
+    rdf:_22 :action_user_1_modify_22 ;
+    rdf:_23 :action_user_1_modify_23 ;
+    rdf:_24 :action_user_1_modify_24 ;
+    rdf:_25 :action_user_1_modify_25 ;
+    rdf:_26 :action_user_1_modify_26 ;
+    rdf:_27 :action_user_1_create_27 ;
+    rdf:_28 :action_user_1_remove_28 ;
+    rdf:_29 :action_user_1_create_29 ;
+    rdf:_3 :action_user_1_modify_3 ;
+    rdf:_30 :action_user_1_modify_30 ;
+    rdf:_31 :action_user_1_modify_31 ;
+    rdf:_32 :action_user_1_modify_32 ;
+    rdf:_33 :action_user_1_modify_33 ;
+    rdf:_34 :action_user_1_modify_34 ;
+    rdf:_35 :action_user_1_modify_35 ;
+    rdf:_36 :action_user_1_remove_36 ;
+    rdf:_37 :action_user_1_create_37 ;
+    rdf:_38 :action_user_1_create_38 ;
+    rdf:_39 :action_user_1_create_39 ;
+    rdf:_4 :action_user_1_modify_4 ;
+    rdf:_40 :action_user_1_switch_40 ;
+    rdf:_41 :action_user_1_remove_41 ;
+    rdf:_42 :action_user_1_create_42 ;
+    rdf:_43 :action_user_1_modify_43 ;
+    rdf:_44 :action_user_1_global_44 ;
+    rdf:_45 :action_user_1_create_45 ;
+    rdf:_46 :action_user_1_modify_46 ;
+    rdf:_47 :action_user_1_create_47 ;
+    rdf:_48 :action_user_1_create_48 ;
+    rdf:_49 :action_user_1_modify_49 ;
+    rdf:_5 :action_user_1_modify_5 ;
+    rdf:_50 :action_user_1_create_50 ;
+    rdf:_51 :action_user_1_modify_51 ;
+    rdf:_52 :action_user_1_create_52 ;
+    rdf:_53 :action_user_1_modify_53 ;
+    rdf:_54 :action_user_1_modify_54 ;
+    rdf:_55 :action_user_1_modify_55 ;
+    rdf:_56 :action_user_1_modify_56 ;
+    rdf:_57 :action_user_1_modify_57 ;
+    rdf:_58 :action_user_1_create_58 ;
+    rdf:_59 :action_user_1_modify_59 ;
+    rdf:_6 :action_user_1_modify_6 ;
+    rdf:_60 :action_user_1_remove_60 ;
+    rdf:_61 :action_user_1_create_61 ;
+    rdf:_62 :action_user_1_modify_62 ;
+    rdf:_63 :action_user_1_remove_63 ;
+    rdf:_64 :action_user_1_create_64 ;
+    rdf:_65 :action_user_1_create_65 ;
+    rdf:_66 :action_user_1_modify_66 ;
+    rdf:_7 :action_user_1_modify_7 ;
+    rdf:_8 :action_user_1_modify_8 ;
+    rdf:_9 :action_user_1_create_9 .
+
+:view_dashboard_0_cont_1_user_1 a diva:DashboardView ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasVisualization :vis_clock_user_1_create_16,
+        :vis_index_user_1_create_37,
+        :vis_stackedview_user_1_create_58 ;
+    dcterms:description "View dashboard_0_cont_1 with parent tableau_abricot and window cont_1" ;
+    dcterms:title "dashboard_0_cont_1" .
+
+:view_dashboard_0_cont_2_user_1 a diva:DashboardView ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasVisualization :vis_clock_user_1_create_12,
+        :vis_clock_user_1_create_19,
+        :vis_index_user_1_create_38,
+        :vis_index_user_1_create_64,
+        :vis_stackedview_user_1_create_42,
+        :vis_stackedview_user_1_create_65 ;
+    dcterms:description "View dashboard_0_cont_2 with parent tableau_abricot and window cont_2" ;
+    dcterms:title "dashboard_0_cont_2" .
+
+:view_dashboard_0_cont_3_user_1 a diva:DashboardView ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasVisualization :vis_index_user_1_create_39 ;
+    dcterms:description "View dashboard_0_cont_3 with parent tableau_abricot and window cont_3" ;
+    dcterms:title "dashboard_0_cont_3" .
+
+:view_dashboard_0_cont_4_user_1 a diva:DashboardView ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasVisualization :vis_chorddiagram_user_1_create_27,
+        :vis_chorddiagram_user_1_create_29,
+        :vis_index_user_1_create_61 ;
+    dcterms:description "View dashboard_0_cont_4 with parent tableau_abricot and window cont_4" ;
+    dcterms:title "dashboard_0_cont_4" .
+
+:view_dashboard_1_cont_1_user_1 a diva:DashboardView ;
+    diva:hasUIElement diva_th:DetailsView ;
+    dcterms:description "View dashboard_1_cont_1 with parent tableau_abricot and window cont_1" ;
+    dcterms:title "dashboard_1_cont_1" .
+
+:view_dashboard_1_cont_3_user_1 a diva:DashboardView ;
+    diva:hasVisualization :vis_chorddiagram_user_1_create_9 ;
+    dcterms:description "View dashboard_1_cont_3 with parent tableau_abricot and window cont_3" ;
+    dcterms:title "dashboard_1_cont_3" .
+
+:view_dashboard_2_cont_1_user_1 a diva:DashboardView ;
+    diva:hasVisualization :vis_index_user_1_create_45,
+        :vis_stackedview_user_1_create_47 ;
+    dcterms:description "View dashboard_2_cont_1 with parent tableau_abricot and window cont_1" ;
+    dcterms:title "dashboard_2_cont_1" .
+
+:view_dashboard_2_cont_2_user_1 a diva:DashboardView ;
+    diva:hasVisualization :vis_stackedview_user_1_create_48 ;
+    dcterms:description "View dashboard_2_cont_2 with parent tableau_abricot and window cont_2" ;
+    dcterms:title "dashboard_2_cont_2" .
+
+:view_dashboard_2_cont_3_user_1 a diva:DashboardView ;
+    diva:hasVisualization :vis_stackedview_user_1_create_50 ;
+    dcterms:description "View dashboard_2_cont_3 with parent tableau_abricot and window cont_3" ;
+    dcterms:title "dashboard_2_cont_3" .
+
+:view_dashboard_2_cont_4_user_1 a diva:DashboardView ;
+    diva:hasVisualization :vis_stackedview_user_1_create_52 ;
+    dcterms:description "View dashboard_2_cont_4 with parent tableau_abricot and window cont_4" ;
+    dcterms:title "dashboard_2_cont_4" .
+
+:view_single_0_cont_1_user_1 a diva:SingleView ;
+    diva:hasUIElement diva:Legend,
+        diva_th:Label ;
+    diva:hasVisualization :vis_stc_user_1_switch_40 ;
+    dcterms:description "View single_0_cont_1 with parent abricot and window cont_1" ;
+    dcterms:title "single_0_cont_1" .
+
+:vis_chorddiagram_user_1_modify_32 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period_4,
+        :encoding_sectors_02_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_individual ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_modify_26 .
+
+:vis_clock_user_1_modify_10 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_ratio,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_5 .
+
+:vis_clock_user_1_modify_21 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_theta,
+        :encoding_sectors_21 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_20 .
+
+:vis_index_user_1_modify_46 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe1_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_index_user_1_create_45 .
+
+:vis_index_user_1_modify_62 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe4_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_index_user_1_create_61 .
+
+:vis_stackedview_user_1_modify_49 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe2_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_stackedview_user_1_create_48 .
+
+:vis_stackedview_user_1_modify_51 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe3_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_stackedview_user_1_create_50 .
+
+:vis_stackedview_user_1_modify_53 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe4_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_stackedview_user_1_create_52 .
+
+:vis_stackedview_user_1_modify_59 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_stackedview_user_1_create_58 .
+
+:vis_stackedview_user_1_modify_66 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_category_classe4_color,
+        :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_stackedview_user_1_create_65 .
+
+:action_user_1_global_1 a diva:Action ;
+    rdfs:label "Dataset Import" ;
+    diva:hasActionType diva_th:Import ;
+    dcterms:description "Import dataset: rennes with resolution DTIR" ;
+    prov:startedAtTime "2020-01-27T14:18:16+00:00"^^xsd:dateTime ;
+    prov:used :dataset_rennes_DTIR,
+        :view_manipulation_user_1_global_1 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_global_44 a diva:Action ;
+    rdfs:label "Dataset Import" ;
+    diva:hasActionType diva_th:Import ;
+    dcterms:description "Import dataset: rennes with resolution DTIR" ;
+    prov:startedAtTime "2020-01-27T16:36:52+00:00"^^xsd:dateTime ;
+    prov:used :dataset_grenoble_D30,
+        :dataset_rennes_DTIR,
+        :view_manipulation_user_1_global_44 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_10 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:01:11+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_10,
+        :vis_clock_user_1_modify_5 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_13 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 21" ;
+    prov:startedAtTime "2020-01-27T15:10:25+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_13,
+        :vis_clock_user_1_create_12 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_14 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:10:43+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_14,
+        :vis_clock_user_1_modify_13 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_17 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 02" ;
+    prov:startedAtTime "2020-01-27T15:22:55+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_17,
+        :vis_clock_user_1_create_16 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_2 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T14:50:47+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_2 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_20 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying indicator to modes" ;
+    prov:startedAtTime "2020-01-27T15:23:22+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_20,
+        :vis_clock_user_1_create_19 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_21 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 21" ;
+    prov:startedAtTime "2020-01-27T15:23:26+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_21,
+        :vis_clock_user_1_modify_20 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_22 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 02" ;
+    prov:startedAtTime "2020-01-27T15:31:31+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_22 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_23 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:32:35+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_23,
+        :vis_chorddiagram_user_1_modify_22 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_24 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:36:42+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_24,
+        :vis_clock_user_1_modify_17 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_25 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:37:15+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_25,
+        :vis_chorddiagram_user_1_modify_23 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_26 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:37:17+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_26,
+        :vis_chorddiagram_user_1_modify_25 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_3 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T14:53:04+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_3 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_30 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 21" ;
+    prov:startedAtTime "2020-01-27T15:45:37+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_30,
+        :vis_chorddiagram_user_1_create_29 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_31 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T15:45:53+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_31,
+        :vis_chorddiagram_user_1_modify_30 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_32 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Granularity ;
+    dcterms:description "Transform visualization by modifying time to individual" ;
+    prov:startedAtTime "2020-01-27T15:50:30+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_32,
+        :vis_chorddiagram_user_1_modify_26 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_33 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying indicator to fluctuation" ;
+    prov:startedAtTime "2020-01-27T16:07:07+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_33,
+        :vis_map_user_1_modify_8 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_34 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Granularity ;
+    dcterms:description "Transform visualization by modifying time to individual" ;
+    prov:startedAtTime "2020-01-27T16:08:40+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_34,
+        :vis_map_user_1_modify_33 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_35 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Granularity ;
+    dcterms:description "Transform visualization by modifying time to aggregate" ;
+    prov:startedAtTime "2020-01-27T16:17:40+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_35,
+        :vis_map_user_1_modify_34 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_4 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 02" ;
+    prov:startedAtTime "2020-01-27T14:53:15+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_4,
+        :vis_clock_user_1_modify_3 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_43 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T16:36:16+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_43,
+        :vis_stc_user_1_switch_40 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_46 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.1" ;
+    prov:startedAtTime "2020-01-27T16:37:42+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_46,
+        :vis_index_user_1_create_45 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_49 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.2" ;
+    prov:startedAtTime "2020-01-27T16:38:06+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_49,
+        :vis_stackedview_user_1_create_48 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_5 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 02" ;
+    prov:startedAtTime "2020-01-27T14:54:23+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_5,
+        :vis_clock_user_1_modify_4 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_51 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.3" ;
+    prov:startedAtTime "2020-01-27T16:38:17+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_51,
+        :vis_stackedview_user_1_create_50 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_53 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.4" ;
+    prov:startedAtTime "2020-01-27T16:38:24+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_53,
+        :vis_stackedview_user_1_create_52 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_54 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T16:42:20+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_54,
+        :vis_map_user_1_modify_35 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_55 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T16:47:36+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_55,
+        :vis_map_user_1_modify_35 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_56 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T16:47:40+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_56,
+        :vis_map_user_1_modify_35 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_57 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T16:47:54+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_57,
+        :vis_map_user_1_modify_35 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_59 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying sector to 02" ;
+    prov:startedAtTime "2020-01-27T16:56:36+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_59,
+        :vis_stackedview_user_1_create_58 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_6 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying indicator to fluctuation" ;
+    prov:startedAtTime "2020-01-27T14:56:26+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_6,
+        :vis_map_user_1_modify_2 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_62 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.4" ;
+    prov:startedAtTime "2020-01-27T17:06:18+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_62,
+        :vis_index_user_1_create_61 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_66 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:Filter ;
+    dcterms:description "Transform visualization by modifying typology to classe.4" ;
+    prov:startedAtTime "2020-01-27T17:07:03+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_66,
+        :vis_stackedview_user_1_create_65 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_7 a diva:Action ;
+    rdfs:label "Display UI Element" ;
+    diva:hasActionType diva_th:DetailsOnDemand ;
+    dcterms:description "Display UI Element" ;
+    prov:startedAtTime "2020-01-27T14:57:52+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_7,
+        :vis_map_user_1_modify_6 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_modify_8 a diva:Action ;
+    rdfs:label "Transform Visualization" ;
+    diva:hasActionType diva_th:MetricTransform ;
+    dcterms:description "Transform visualization by modifying rep to number" ;
+    prov:startedAtTime "2020-01-27T14:57:59+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_modify_8,
+        :vis_map_user_1_modify_7 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_11 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:09:35+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_11,
+        :vis_clock_user_1_remove_11 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_15 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:22:35+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_15,
+        :vis_clock_user_1_remove_15 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_18 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:23:11+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_18,
+        :vis_clock_user_1_modify_14 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_28 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type chord-diagram" ;
+    prov:startedAtTime "2020-01-27T15:45:21+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_28,
+        :vis_chorddiagram_user_1_create_27 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_36 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type index" ;
+    prov:startedAtTime "2020-01-27T16:31:58+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_36,
+        :vis_clock_user_1_modify_24 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_41 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:34:26+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_41,
+        :vis_stackedview_user_1_remove_41 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_60 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type chord-diagram" ;
+    prov:startedAtTime "2020-01-27T17:05:44+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_60,
+        :vis_chorddiagram_user_1_modify_31 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_remove_63 a diva:Action ;
+    rdfs:label "Delete Visualization" ;
+    diva:hasActionType diva_th:Delete ;
+    dcterms:description "Delete visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T17:06:50+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_remove_63,
+        :vis_index_user_1_create_38 ;
+    prov:wasAssociatedWith :user_1 .
+
+:encoding_category_classe1_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_category_classe1 ;
+    dcterms:description "Encoding for field category" .
+
+:encoding_category_classe2_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_category_classe2 ;
+    dcterms:description "Encoding for field category" .
+
+:encoding_category_classe3_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_category_classe3 ;
+    dcterms:description "Encoding for field category" .
+
+:encoding_indicator_attractiveness_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_indicator_attractiveness ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:encoding_indicator_fluctuation_size a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Size ;
+    diva:hasEncodingField :field_indicator_fluctuation ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:encoding_period_15_x a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:X ;
+    diva:hasEncodingField :field_period_15 ;
+    dcterms:description "Encoding for field period" .
+
+:event_user_1_create_12 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_16 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_19 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_27 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_29 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_37 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_38 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_39 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_42 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_45 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_47 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_48 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_50 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_52 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_58 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_61 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_64 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_65 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_create_9 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_global_1 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_global_44 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_10 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_13 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_14 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_17 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_2 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_20 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_21 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_22 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_23 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_24 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_25 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_26 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_3 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_30 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_31 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_32 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_33 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_34 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_35 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_4 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_43 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_46 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_49 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_5 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_51 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_53 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_54 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_55 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_56 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_57 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_59 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_6 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_62 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_66 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_7 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_modify_8 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_11 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_15 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_18 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_28 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_36 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_41 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_60 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_remove_63 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:event_user_1_switch_40 a diva:Event ;
+    diva:hasEventType diva_th:Click .
+
+:field_category_classe1 a diva:Field ;
+    rdfs:label "category" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field category with value classe.1" ;
+    dcterms:title "Field category = classe.1" ;
+    rdf:value "classe.1" .
+
+:field_category_classe2 a diva:Field ;
+    rdfs:label "category" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field category with value classe.2" ;
+    dcterms:title "Field category = classe.2" ;
+    rdf:value "classe.2" .
+
+:field_category_classe3 a diva:Field ;
+    rdfs:label "category" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field category with value classe.3" ;
+    dcterms:title "Field category = classe.3" ;
+    rdf:value "classe.3" .
+
+:field_category_classe4 a diva:Field ;
+    rdfs:label "category" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field category with value classe.4" ;
+    dcterms:title "Field category = classe.4" ;
+    rdf:value "classe.4" .
+
+:field_indicator_activity a diva:Field ;
+    rdfs:label "indicator" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field indicator with value activity" ;
+    dcterms:title "Field indicator = activity" ;
+    rdf:value "activity" .
+
+:field_indicator_attractiveness a diva:Field ;
+    rdfs:label "indicator" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field indicator with value attractiveness" ;
+    dcterms:title "Field indicator = attractiveness" ;
+    rdf:value "attractiveness" .
+
+:field_indicator_general a diva:Field ;
+    rdfs:label "indicator" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field indicator with value general" ;
+    dcterms:title "Field indicator = general" ;
+    rdf:value "general" .
+
+:field_indicator_modes a diva:Field ;
+    rdfs:label "indicator" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field indicator with value modes" ;
+    dcterms:title "Field indicator = modes" ;
+    rdf:value "modes" .
+
+:field_period_15 a diva:Field ;
+    rdfs:label "period" ;
+    diva:hasFieldType diva_th:Temporal ;
+    dcterms:description "Field period with value 15" ;
+    dcterms:title "Field period = 15" ;
+    rdf:value 15 .
+
+:field_period_4 a diva:Field ;
+    rdfs:label "period" ;
+    diva:hasFieldType diva_th:Temporal ;
+    dcterms:description "Field period with value 4" ;
+    dcterms:title "Field period = 4" ;
+    rdf:value 4 .
+
+:unknown_vis_user_1_switch_40 a diva:Visualization ;
+    dcterms:title "Unknown Visualization" .
+
+:view_manipulation_user_1_create_12 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_12 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_16 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_16 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_19 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_19 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_27 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_27 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_29 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_29 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_37 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_37 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_38 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_38 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_39 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_39 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_42 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_42 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_45 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_45 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_47 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_47 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_48 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_48 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_50 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_50 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_52 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_52 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_58 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_58 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_61 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_61 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_64 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_64 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_65 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_65 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_create_9 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_create_9 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_global_1 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_global_1 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Switch .
+
+:view_manipulation_user_1_global_44 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_global_44 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Switch .
+
+:view_manipulation_user_1_modify_10 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_10 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_13 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_13 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_14 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_14 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_17 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_17 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_2 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_2 ;
+    diva:hasUIElement diva:Legend ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_20 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_20 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_21 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_21 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_22 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_22 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_23 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_23 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_24 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_24 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_25 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_25 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_26 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_26 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_3 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_3 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_30 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_30 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_31 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_31 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_32 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_32 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_33 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_33 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_34 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_34 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_35 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_35 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_4 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_4 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_43 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_43 ;
+    diva:hasUIElement diva_th:DetailsView ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_46 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_46 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_49 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_49 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_5 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_5 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_51 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_51 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_53 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_53 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_54 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_54 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_55 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_55 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_56 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_56 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_57 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_57 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_59 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_59 ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_6 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_6 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_62 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_62 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_66 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_66 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_7 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_7 ;
+    diva:hasUIElement diva:Legend ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_modify_8 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_modify_8 ;
+    diva:hasUIElement diva_th:DropdownButton ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_11 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_11 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_15 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_15 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_18 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_18 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_28 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_28 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_36 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_36 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_41 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_41 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_60 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_60 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_remove_63 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_remove_63 ;
+    diva:hasUIElement diva_th:Icon ;
+    diva:hasViewManipulationType diva_th:Select .
+
+:view_manipulation_user_1_switch_40 a diva:ViewManipulation ;
+    diva:hasEvent :event_user_1_switch_40 ;
+    diva:hasUIElement diva_th:ToggleSwitch ;
+    diva:hasViewManipulationType diva_th:Switch .
+
+:vis_chorddiagram_user_1_create_9 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_9 .
+
+:vis_chorddiagram_user_1_modify_31 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_21_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_modify_30 .
+
+:vis_clock_user_1_modify_14 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta,
+        :encoding_sectors_21 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_13 .
+
+:vis_clock_user_1_modify_24 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_theta,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_17 .
+
+:vis_clock_user_1_remove_11 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "clock" ;
+    prov:wasAttributedTo :user_1 .
+
+:vis_clock_user_1_remove_15 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "clock" ;
+    prov:wasAttributedTo :user_1 .
+
+:vis_index_user_1_create_37 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_37 .
+
+:vis_index_user_1_create_39 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_15_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_individual ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_39 .
+
+:vis_index_user_1_create_64 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_64 .
+
+:vis_stackedview_user_1_create_42 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_grenoble_D30 ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_42 .
+
+:vis_stackedview_user_1_create_47 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_47 .
+
+:vis_stackedview_user_1_remove_41 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_grenoble_D30 ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "stacked-view" ;
+    prov:wasAttributedTo :user_1 .
+
+:action_user_1_create_12 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:09:38+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_12 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_16 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:22:46+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_16 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_19 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type clock" ;
+    prov:startedAtTime "2020-01-27T15:23:17+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_19 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_27 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type chord-diagram" ;
+    prov:startedAtTime "2020-01-27T15:44:39+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_27 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_29 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type chord-diagram" ;
+    prov:startedAtTime "2020-01-27T15:45:27+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_29 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_37 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T16:32:02+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_37 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_38 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T16:32:52+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_38 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_39 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T16:33:31+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_39 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_42 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:34:28+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_42 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_45 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T16:37:33+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_45 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_47 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:37:48+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_47 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_48 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:38:00+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_48 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_50 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:38:11+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_50 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_52 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:38:19+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_52 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_58 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T16:56:21+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_58 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_61 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T17:05:50+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_61 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_64 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type index" ;
+    prov:startedAtTime "2020-01-27T17:06:53+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_64 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_65 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type stacked-view" ;
+    prov:startedAtTime "2020-01-27T17:06:55+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_65 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_create_9 a diva:Action ;
+    rdfs:label "Add Visualization" ;
+    diva:hasActionType diva_th:Produce ;
+    dcterms:description "Add visualization of type chord-diagram" ;
+    prov:startedAtTime "2020-01-27T14:59:46+00:00"^^xsd:dateTime ;
+    prov:used :view_manipulation_user_1_create_9 ;
+    prov:wasAssociatedWith :user_1 .
+
+:action_user_1_switch_40 a diva:Action ;
+    rdfs:label "Switch Visualization" ;
+    diva:hasActionType diva_th:Browse ;
+    dcterms:description "Switching from map to stc" ;
+    prov:startedAtTime "2020-01-27T16:34:12+00:00"^^xsd:dateTime ;
+    prov:used :unknown_vis_user_1_switch_40,
+        :view_manipulation_user_1_switch_40,
+        :vis_stc_user_1_switch_40 ;
+    prov:wasAssociatedWith :user_1 .
+
+:agent_CEREMA a foaf:Agent ;
+    foaf:name "CEREMA" .
+
+:encoding_period_4 a diva:Encoding ;
+    diva:hasEncodingField :field_period_4 ;
+    dcterms:description "Encoding for field period" .
+
+:encoding_sectors_21_theta a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Theta ;
+    diva:hasEncodingField :field_sectors_21 ;
+    dcterms:description "Encoding for field sectors" .
+
+:field_indicator_fluctuation a diva:Field ;
+    rdfs:label "indicator" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field indicator with value fluctuation" ;
+    dcterms:title "Field indicator = fluctuation" ;
+    rdf:value "fluctuation" .
+
+:field_sectors_02 a diva:Field ;
+    rdfs:label "sectors" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field sectors with value 02" ;
+    dcterms:title "Field sectors = 02" ;
+    rdf:value "02" .
+
+:field_sectors_21 a diva:Field ;
+    rdfs:label "sectors" ;
+    diva:hasFieldType diva_th:Categorical ;
+    dcterms:description "Field sectors with value 21" ;
+    dcterms:title "Field sectors = 21" ;
+    rdf:value "21" .
+
+:publisher_ADISP a foaf:Agent ;
+    foaf:name "ADISP" .
+
+:vis_chorddiagram_user_1_create_27 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_27 .
+
+:vis_chorddiagram_user_1_modify_22 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_02_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 .
+
+:vis_chorddiagram_user_1_modify_23 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_02_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_modify_22 .
+
+:vis_chorddiagram_user_1_modify_25 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_02_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_modify_23 .
+
+:vis_chorddiagram_user_1_modify_26 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_02_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_modify_25 .
+
+:vis_chorddiagram_user_1_modify_30 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period,
+        :encoding_sectors_21_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_chorddiagram_user_1_create_29 .
+
+:vis_clock_user_1_modify_13 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta,
+        :encoding_sectors_21 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_create_12 .
+
+:vis_clock_user_1_modify_17 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_theta,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_create_16 .
+
+:vis_clock_user_1_modify_20 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_create_19 .
+
+:vis_clock_user_1_modify_3 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta ;
+    diva:hasSignal :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 .
+
+:vis_clock_user_1_modify_4 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_ratio,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_3 .
+
+:vis_clock_user_1_modify_5 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta,
+        :encoding_sectors_02 ;
+    diva:hasSignal :signal_rep_ratio,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_clock_user_1_modify_4 .
+
+:vis_index_user_1_create_38 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_individual,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_38 .
+
+:vis_map_user_1_modify_2 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_attractiveness_color,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 .
+
+:vis_map_user_1_modify_33 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_color,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_8 .
+
+:vis_map_user_1_modify_34 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_color,
+        :encoding_period_4 ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_individual ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_33 .
+
+:vis_map_user_1_modify_6 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_color,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_2 .
+
+:vis_map_user_1_modify_7 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_color,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_6 .
+
+:vis_map_user_1_modify_8 a diva:BubbleMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_size,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_7 .
+
+:encoding_category_classe4_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_category_classe4 ;
+    dcterms:description "Encoding for field category" .
+
+:encoding_sectors_21 a diva:Encoding ;
+    diva:hasEncodingField :field_sectors_21 ;
+    dcterms:description "Encoding for field sectors" .
+
+:field_period_None a diva:Field ;
+    rdfs:label "period" ;
+    diva:hasFieldType diva_th:Temporal ;
+    dcterms:description "Field period with value None" ;
+    dcterms:title "Field period = None" ;
+    rdf:value "None" .
+
+:signal_time_individual a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal time with value individual" ;
+    dcterms:title "Signal time = individual" ;
+    rdf:value "individual" .
+
+:vis_chorddiagram_user_1_create_29 a diva:ChordDiagram ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_general_color,
+        :encoding_period ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type chord-diagram" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_29 .
+
+:vis_clock_user_1_create_12 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_12 .
+
+:vis_clock_user_1_create_16 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_modes_color,
+        :encoding_period_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_16 .
+
+:vis_clock_user_1_create_19 a diva:DonutChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_theta ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type clock" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_19 .
+
+:vis_index_user_1_create_45 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_45 .
+
+:vis_index_user_1_create_61 a diva:StackedBarChart ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type index" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_61 .
+
+:vis_stackedview_user_1_create_48 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_48 .
+
+:vis_stackedview_user_1_create_50 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_50 .
+
+:vis_stackedview_user_1_create_52 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_52 .
+
+:vis_stackedview_user_1_create_58 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_58 .
+
+:vis_stackedview_user_1_create_65 a diva:StackedAreaGraph ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_activity_color,
+        :encoding_period_x ;
+    diva:hasSignal :signal_rep_number,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type stacked-view" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_create_65 .
+
+:vis_stc_user_1_switch_40 a diva:STC ;
+    diva:hasDataSource :dataset_grenoble_D30 ;
+    diva:hasSignal :signal_display_True ;
+    dcterms:description "Visualization of type stc" ;
+    dcterms:title "stc" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasGeneratedBy :action_user_1_switch_40 .
+
+:dataset_grenoble_D30 a diva:DataSource ;
+    dcterms:creator :agent_CEREMA ;
+    dcterms:issued "2010"^^xsd:gYear ;
+    dcterms:publisher :publisher_ADISP ;
+    dcterms:title "HTS grenoble" .
+
+:vis_map_user_1_modify_35 a diva:ChoroplethMap ;
+    diva:hasDataSource :dataset_rennes_DTIR ;
+    diva:hasEncoding :encoding_indicator_fluctuation_color,
+        :encoding_period ;
+    diva:hasSignal :signal_display_True,
+        :signal_rep_ratio,
+        :signal_space_aggregate,
+        :signal_time_aggregate ;
+    dcterms:description "Visualization of type map" ;
+    dcterms:title "Not labeled" ;
+    prov:wasAttributedTo :user_1 ;
+    prov:wasDerivedFrom :vis_map_user_1_modify_34 .
+
+:encoding_indicator_fluctuation_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_indicator_fluctuation ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:encoding_sectors_02_theta a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Theta ;
+    diva:hasEncodingField :field_sectors_02 ;
+    dcterms:description "Encoding for field sectors" .
+
+:encoding_indicator_modes_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_indicator_modes ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:encoding_sectors_02 a diva:Encoding ;
+    diva:hasEncodingField :field_sectors_02 ;
+    dcterms:description "Encoding for field sectors" .
+
+:signal_display_True a diva:Signal ;
+    diva:hasSignalType diva_th:Display ;
+    dcterms:description "Signal display with value True" ;
+    dcterms:title "Signal display = True" ;
+    rdf:value true .
+
+:encoding_indicator_general_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_indicator_general ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:signal_rep_ratio a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal rep with value ratio" ;
+    dcterms:title "Signal rep = ratio" ;
+    rdf:value "ratio" .
+
+:encoding_period_theta a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Theta ;
+    diva:hasEncodingField :field_period_None ;
+    dcterms:description "Encoding for field period" .
+
+:encoding_period a diva:Encoding ;
+    diva:hasEncodingField :field_period_None ;
+    dcterms:description "Encoding for field period" .
+
+:encoding_period_x a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:X ;
+    diva:hasEncodingField :field_period_None ;
+    dcterms:description "Encoding for field period" .
+
+:signal_space_individual a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal space with value individual" ;
+    dcterms:title "Signal space = individual" ;
+    rdf:value "individual" .
+
+:encoding_indicator_activity_color a diva:Encoding ;
+    diva:hasEncodingChannel diva_th:Color ;
+    diva:hasEncodingField :field_indicator_activity ;
+    diva:hasLegend diva:Legend ;
+    dcterms:description "Encoding for field indicator" .
+
+:signal_space_aggregate a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal space with value aggregate" ;
+    dcterms:title "Signal space = aggregate" ;
+    rdf:value "aggregate" .
+
+:signal_rep_number a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal rep with value number" ;
+    dcterms:title "Signal rep = number" ;
+    rdf:value "number" .
+
+:signal_time_aggregate a diva:Signal ;
+    diva:hasSignalType diva_th:DataAggregation ;
+    dcterms:description "Signal time with value aggregate" ;
+    dcterms:title "Signal time = aggregate" ;
+    rdf:value "aggregate" .
+
+:dataset_rennes_DTIR a diva:DataSource ;
+    dcterms:creator :agent_CEREMA ;
+    dcterms:issued "2018"^^xsd:gYear ;
+    dcterms:publisher :publisher_ADISP ;
+    dcterms:title "HTS rennes" .
+
+:user_1 a prov:Agent ;
+    foaf:name "user_1" .
+

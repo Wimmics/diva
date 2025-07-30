@@ -1,0 +1,530 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix diva: <http://ns.inria.fr/diva/ontology#> .
+
+
+# Uses dcterms:title to define the name of entities (prov:Entity)
+# Every prov:Entity can be a target of an action, but not every prov:Entity is a target of an view manipulation
+# Uses rdf:value to define the value of properties, such as the title of a visualization or the name of a user
+
+# --- Exploration Path ---
+# The ExplorationPath class is a subclass of rdfs:Seq
+# It represents a sequence of tasks or activities that are performed to achieve a specific goal in a visualization context.
+# Uses rdfs:member to define the actions in the exploration path
+# Uses rdf:_i to define the order of the actions in the exploration path
+
+diva:ExplorationPath a rdfs:Seq ;
+    rdfs:isDefinedBy diva: ; 
+    rdfs:label "Exploraton Path"@en ;
+    rdfs:comment "A sequence of tasks or activities that are performed to achieve a specific goal in a visualization context."@en .
+
+# --- User ---
+# Use directly the prov:Agent class to represent the user
+# Uses foaf:name to provide the name of the user and the system
+
+# --- View --
+# The View class is a subclass of prov:Entity
+# Uses prov:wasAttributedTo from the PROV ontology to link the view to the user who created it
+diva:View a owl:Class ;
+    rdfs:subClassOf prov:Entity, rdf:Bag ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "View" ;
+    rdfs:comment "A container for one or multiple visualization techniques." .
+
+### --- View Type Concepts ---
+diva:SingleView a owl:Class ;
+    rdfs:subClassOf diva:View ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Single View"@en ;
+    rdfs:comment "A standalone view showing a single visualization or component."@en .
+
+diva:DashboardView a owl:Class ;
+    rdfs:subClassOf diva:View ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Dashboard View"@en ;
+    rdfs:comment "A composite view that integrates multiple visualizations or components."@en .
+
+# ----- Data -----
+# Classes
+# We use dcat:Dataset to represent the data source
+
+diva:DataSource a owl:Class ;
+    rdfs:subClassOf dcat:Dataset, prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Data Source"@en ;
+    rdfs:comment "A source of data used in visualizations, such as a database, file, or API."@en .
+
+# Use rdf:value to define the query string 
+diva:Query a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Query" ;
+    rdfs:comment "A query that retrieves data from a data source." .
+
+diva:isAppliedTo a owl:ObjectProperty ;
+    rdfs:domain diva:Query ;
+    rdfs:range diva:DataSource ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "is applied to" ;
+    rdfs:comment "Links a query to the dataset or data service it retrieves data from." .
+
+
+# ---- Visualization ----
+# Classes to describe a visualization technique based on the Vega-Lite grammar
+
+# The Visualization class is a subclass of prov:Entity
+# Uses prov:wasAttributedTo from the PROV ontology to link the visualization to the user (prov:Agent) who created it
+# Uses prov:wasGeneratedBy from the PROV ontology to link the visualization to the interaction (prov:Activity) that generated it
+# Uses prov:wasDerivedFrom from the PROV ontology to link the visualization to the view or data source (prov:Entity) that it is based on
+# Uses dcterms:title to describe the title of the visualization
+
+## Following the classification proposed by the Data Visualization Catalogue (https://datavizcatalogue.com)
+
+diva:Visualization a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Visualization"@en ;
+    rdfs:comment "Superclass for all types of visualization techniques."@en .
+
+diva:RadarChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Radial Chart"@en ;
+    rdfs:comment "A circular chart that displays data in a radial layout, often used for showing proportions or relationships."@en .
+
+diva:ParallelCoordinatesPlot a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Parallel Coordinates"@en ;
+    rdfs:comment "A visualization technique that displays multivariate data using parallel axes, allowing for comparison of multiple variables."@en .
+
+diva:ChordDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Chord Diagram"@en ;
+    rdfs:comment "A visualization that shows relationships between data points using arcs and chords."@en .
+
+diva:ArcDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Arc Diagram"@en ;
+    rdfs:comment "A visualization that represents relationships between data points using arcs, often used for network data."@en .
+
+diva:BarChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Bar Chart"@en ;
+    rdfs:comment "A chart that uses bars to show quantities for different categories."@en .
+
+diva:LineGraph a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Line Chart"@en ;
+    rdfs:comment "A chart that uses lines to connect data points, showing trends over time."@en .
+
+diva:StackedAreaGraph a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Stacked Area Chart"@en ;
+    rdfs:comment "A chart that displays the cumulative totals of multiple data series, showing how each contributes to the whole over time."@en .
+
+diva:StackedBarChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Stacked Bar Chart"@en ;
+    rdfs:comment "A bar chart where each bar is divided into segments representing different categories, showing the total and individual contributions."@en .
+
+diva:PieChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Pie Chart"@en ;
+    rdfs:comment "A circular chart divided into sectors, each representing a proportion of the whole."@en .
+
+diva:DonutChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Donut Chart"@en ;
+    rdfs:comment "A variation of the pie chart with a hole in the center, often used to show proportions."@en .
+
+diva:Histogram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Histogram"@en ;
+    rdfs:comment "A graphical representation of the distribution of numerical data, using bars to show frequency."@en .
+
+diva:BubbleChart a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Bubble Chart"@en ;
+    rdfs:comment "A chart that uses circles to represent data points, with the size of the circle indicating a third variable."@en .
+
+diva:ScatterPlot a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Scatter Plot"@en ;
+    rdfs:comment "A plot that uses Cartesian coordinates to display values for two variables for a set of data."@en .
+
+diva:STC a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Space-Time Cube"@en ;
+    rdfs:comment "A visualization technique that represents data in three dimensions: two spatial dimensions and one temporal dimension, often used for analyzing movement or changes over time."@en .
+
+diva:Map a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Map"@en ;
+    rdfs:comment "A representation of geographic data, often used to visualize spatial relationships."@en .
+
+diva:ChoroplethMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Choropleth Map"@en ;
+    rdfs:comment "A map that uses color to represent data values in geographic regions."@en .
+
+diva:HeatMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Heat Map"@en ;
+    rdfs:comment "A map that uses color gradients to represent data density or intensity."@en .
+
+diva:ConnectionMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Connection Map"@en ;
+    rdfs:comment "A map that shows connections or flows between geographic locations."@en .
+
+diva:BubbleMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Bubble Map"@en ;
+    rdfs:comment "A map that uses bubbles to represent data points, with bubble size indicating a third variable."@en .
+
+diva:DotMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Dot Map"@en ;
+    rdfs:comment "A map that uses dots to represent the presence or quantity of a variable in geographic locations."@en .
+
+diva:FlowMap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Flow Map"@en ;
+    rdfs:comment "A map that shows the movement of objects or data between locations, often using arrows."@en .
+
+diva:Treemap a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Treemap"@en ;
+    rdfs:comment "A visualization that uses nested rectangles to represent hierarchical data."@en .
+
+diva:NetworkDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Network Diagram"@en ;
+    rdfs:comment "A visualization that represents relationships between entities using nodes and edges."@en .
+
+diva:TreeDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Tree Diagram"@en ;
+    rdfs:comment "A visualization that represents hierarchical relationships using a tree structure."@en .
+
+diva:SunburstDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Sunburst Diagram"@en ;
+    rdfs:comment "A circular visualization that represents hierarchical data using concentric circles."@en .
+
+diva:CirclePacking a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Circle Packing"@en ;
+    rdfs:comment "A visualization technique that uses nested circles to represent hierarchical data."@en .
+
+diva:SankeyDiagram a owl:Class ;
+    rdfs:subClassOf diva:Visualization ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Sankey Diagram"@en ;
+    rdfs:comment "A flow diagram that represents the flow of resources or data between entities, with the width of the arrows proportional to the flow quantity."@en .
+
+
+## --- Visualization Properties
+
+diva:hasEncoding a owl:ObjectProperty ;
+    rdfs:domain diva:Visualization ;
+    rdfs:range diva:Encoding ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has encoding" ;
+    rdfs:comment "Links a visualization to its encodings." .
+
+diva:hasSignal a owl:ObjectProperty ;
+    rdfs:domain diva:Visualization ;
+    rdfs:range diva:Signal ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has signal" ;
+    rdfs:comment "Links a visualization to its dynamic signals." .
+
+diva:hasDataSource a owl:ObjectProperty ;
+    rdfs:domain diva:Visualization ;
+    rdfs:range diva:DataSource ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has data source" ;
+    rdfs:comment "Links a visualization to its data source." .
+
+
+# Signals
+diva:Signal a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Signal"@en ;
+    rdfs:comment "Signals are dynamic variables that parameterize a visualization and can drive interactive behaviors."@en .
+
+diva:SignalType a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Signal Type"@en ;
+    rdfs:comment "A type of signal that can be used in a visualization, such as 'zoom', 'pan', 'filter'."@en .
+
+diva:hasSignalType a owl:ObjectProperty ;
+    rdfs:domain diva:Signal ;
+    rdfs:range diva:SignalType ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Signal Type"@en ;
+    rdfs:comment "The type of signal, such as 'zoom', 'pan', 'filter'."@en .
+
+
+# Encodings
+diva:Encoding a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Encoding" ;
+    rdfs:comment "An association between a data field and a visual channel." .
+
+diva:Field a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Field" ;
+    rdfs:comment "A field (attribute) from the data source." .
+
+diva:Channel a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Channel" ;
+    rdfs:comment "A visual channel used in the encoding, such as color, size, or shape." .
+
+diva:Legend a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Legend" ;
+    rdfs:comment "A legend that provides information about the visual encoding." .
+
+diva:Mark a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Mark" ;
+    rdfs:comment "A mark is the basic graphical element used to represent data. It defines what shape is drawn to show the data." .
+
+diva:ScaleType a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Scale" ;
+    rdfs:comment "A scale defines how data values are mapped to visual properties, such as pixels, size, or color." .
+
+## --- Encoding properties
+
+diva:hasMark a owl:ObjectProperty ;
+    rdfs:domain diva:Encoding ;
+    rdfs:range diva:Mark ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has mark" ;
+    rdfs:comment "Links a visualization to its mark type." .
+
+diva:hasLegend a owl:ObjectProperty ;
+    rdfs:domain diva:Encoding ;
+    rdfs:range diva:Legend ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has legend" ;
+    rdfs:comment "Links an encoding to the legend that represents it." .
+
+diva:hasEncodingChannel a owl:ObjectProperty ;
+    rdfs:domain diva:Encoding ;
+    rdfs:range diva:EncodingChannel ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has channel" ;
+    rdfs:comment "Links an encoding to a visual channel (e.g., color, size)." .
+
+diva:hasEncodingField a owl:ObjectProperty ;
+    rdfs:domain diva:Encoding ;  
+    rdfs:range diva:Field ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has field"@en ;
+    rdfs:comment "Links a visual channel to a data field."@en .
+
+diva:hasScaleType a owl:ObjectProperty ;
+    rdfs:domain diva:Encoding ;
+    rdfs:range diva:ScaleType ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "has scale" ;
+    rdfs:comment "Links an encoding to a scale that defines how data values are mapped to visual properties." .
+
+
+#### ------------------------------------------------
+#### ----- Interaction ------------------------------
+# Classes
+
+# diva:Action is a sub-class of prov:Activity
+# diva:Action -> Uses prov:startedAtTime from the PROV ontology to link the interaction to the time it started
+# diva:Action -> Uses prov:endedAtTime from the PROV ontology to link the interaction to the time it ended
+# diva:Action -> Uses prov:wasAssociatedWith from the PROV ontology to link the interaction to the user who created it
+# diva:Action -> uses prov:used to link action to exploration strategies, and visual targets (prov:Entity) that it operates on
+
+
+# --- Classes to define the interactions ---
+# diva:Event uses rdf:value to define associated values, such as zoom level or panning distance
+
+diva:Event a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Event"@en ; 
+    rdfs:label "Physical Action"@en ;
+    rdfs:comment "A low level user-triggered event interaction with a visualization, such as clicking or hovering."@en .
+
+diva:hasEventType a owl:ObjectProperty ;
+    rdfs:domain diva:Event ;
+    rdfs:range diva:EventType ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Event Type"@en ;
+    rdfs:comment "The type of event interaction performed in the visualization, such as 'click', 'hover', 'drag'."@en .
+
+diva:EventType a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Event Type"@en ;
+    rdfs:comment "A type of event interaction that can be performed in the context of a visualization, such as 'click', 'hover', 'drag'."@en .
+
+diva:hasPositionX a owl:DatatypeProperty ;
+    rdfs:domain diva:Event ;
+    rdfs:range rdfs:Literal ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Interaction X Position"@en ;
+    rdfs:comment "Position of the interaction on the X-axis for all interaction types."@en .
+
+diva:hasPositionY a owl:DatatypeProperty ;
+    rdfs:domain diva:Event ;
+    rdfs:range rdfs:Literal ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Interaction Y Position"@en ;
+    rdfs:comment "Position of the interaction on the Y-axis for all interaction types."@en .
+
+# View Manipulation
+diva:ViewManipulation a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "View Manipulation"@en ;
+    rdfs:comment "Interactions that affect existing elements of a visualization, modifying them to some extent. It incorporates both physical interaction and visual encoding."@en .
+
+diva:ViewManipulationType a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "View Manipulation Type"@en ;
+    rdfs:comment "A type of interaction that can be performed in the context of a visualization by directly manipulating the visualization elements, such as 'select', 'zoom', 'pan', 'filter'."@en .
+
+diva:UIElement a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "UI Element"@en ;
+    rdfs:comment "A user interface element that can be manipulated, such as a slider, button, or dropdown."@en .
+
+diva:hasViewManipulationType a owl:ObjectProperty ;
+    rdfs:domain diva:ViewManipulation ;
+    rdfs:range diva:ViewManipulationType ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "View Manipulation Type"@en ;
+    rdfs:comment "The type of view manipulation performed in the interaction, such as 'zoom', 'pan', 'filter'."@en .
+
+diva:hasUIElement a owl:ObjectProperty ;
+    rdfs:domain diva:ViewManipulation ;
+    rdfs:range diva:UIElement ;
+    rdfs:isDefinedBy diva: ; 
+    rdfs:label "UI Element"@en ;
+    rdfs:comment "The UI element involved in the manipulation, such as 'slider', 'button', 'dropdown'."@en .
+
+# Actions
+diva:Action a owl:Class ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Action Interaction"@en ;
+    rdfs:comment "A cognitive sub-task interaction that represents user goals during interaction, such as identifying or searching."@en .
+
+diva:ActionType a owl:Class ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Action Type"@en ;
+    rdfs:comment "A type of action that can be performed in the context of a visualization."@en .
+
+diva:nextAction a owl:ObjectProperty ;
+    rdfs:domain diva:Action ;
+    rdfs:range diva:Action ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Next Action"@en ;
+    rdfs:comment "The next action to be performed in the workflow."@en .
+
+diva:previousAction a owl:ObjectProperty ;
+    rdfs:domain diva:Action ;
+    rdfs:range diva:Action ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Previous Action"@en ;
+    rdfs:comment "The previous action in the workflow."@en .
+
+diva:hasActionType a owl:ObjectProperty ;
+    rdfs:domain diva:Action ;
+    rdfs:range diva:ActionType ; 
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Action Type"@en ;
+    rdfs:comment "The type of action performed in the interaction, such as 'search', 'identify', 'filter'."@en .
+
+# use dcterms:title to describe the task (it is high level, domain dependent and cannot be classed)
+diva:Task a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Task Interaction"@en ;
+    rdfs:comment "A high level or exploratory task related to the application domain."@en .
+
+diva:hasAction a owl:ObjectProperty ;
+    rdfs:domain diva:Task ;
+    rdfs:range diva:Action ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Task Action"@en ;
+    rdfs:comment "The action associated with the task, representing a cognitive sub-task or goal."@en .
+
+# ----- Annotations (for capturing user intentions and insights) -----
+# Class diva:Annotation
+# Uses oa:hasBody from the Open Annotation ontology to link the annotation to the content (text, image, etc.) that is being annotated
+# Uses prov:wasAttributedTo from the PROV ontology to link the annotation to the user who created it
+# Uses prov:wasGeneratedBy from the PROV ontology to link the annotation to the interaction that generated it
+# Uses oa:hasTarget from the Open Annotation ontology to link the annotation to the target of the annotation (e.g., a visualization, a specific element in a visualization, etc.)
+# Uses dcterms:created from the DCTerms ontology to link the annotation to the user that created it
+
+diva:Annotation a owl:Class ;
+    rdfs:subClassOf oa:Annotation, prov:Entity ;
+    rdfs:isDefinedBy diva: ;
+    rdfs:label "Annotation"@en ;
+    rdfs:comment "An annotation applied to a visualization to capture user insights, feedback, or other information."@en .
+
+diva:insight a oa:Motivation ;
+    rdfs:label "Insight"@en ;
+    rdfs:comment "A motivation for creating an annotation to capture insights or observations about the data or visualization."@en ;
+    rdfs:isDefinedBy diva: .
+
+diva:rationale a oa:Motivation ;
+    rdfs:label "Rationale"@en ;
+    rdfs:comment "A motivation for creating an annotation to capture the reasoning or justification behind a decision or observation."@en ;
+    rdfs:isDefinedBy diva: .
+
+## definition of DIVA ontology
+diva: a owl:Ontology ;
+    dcterms:title "Data, Interaction, Visualization, and Analysis (DIVA) Ontology" ;
+    dcterms:creator [a foaf:Person; foaf:name "Aline Menin"],
+        [a foaf:Person; foaf:name "Catherine Faron"] ;
+    dcterms:modified "2025-07-30T09:05:00Z" ;
+    rdfs:comment "The DIVA Ontology defines concepts and relationships for data, interaction, visualization, and analysis in the context of data visualizations."@en ;
+    owl:versionInfo "2025-07-30T09:05:00Z" .

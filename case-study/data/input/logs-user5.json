@@ -1,0 +1,2170 @@
+[
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 1,
+    "date": "24/1/2020 at 10:42:48",
+    "time": 1579862568210,
+    "eventInfo": {
+      "code": "switch",
+      "item": "switch",
+      "value": "stc"
+    },
+    "eventType": "switch",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 2,
+    "date": "24/1/2020 at 10:43:05",
+    "time": 1579862585353,
+    "eventInfo": {
+      "code": "modify",
+      "item": "details",
+      "value": true
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 3,
+    "date": "24/1/2020 at 10:43:54",
+    "time": 1579862634865,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 4,
+    "date": "24/1/2020 at 10:44:08",
+    "time": 1579862648791,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 5,
+    "date": "24/1/2020 at 10:44:28",
+    "time": 1579862668312,
+    "eventInfo": {
+      "code": "modify",
+      "item": "semantic",
+      "value": "both"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 6,
+    "date": "24/1/2020 at 10:44:37",
+    "time": 1579862677747,
+    "eventInfo": {
+      "code": "modify",
+      "item": "semantic",
+      "value": "activity"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {},
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_1",
+    "index": 7,
+    "date": "24/1/2020 at 10:45:55",
+    "time": 1579862755866,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "stc"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_1",
+    "index": 8,
+    "date": "24/1/2020 at 10:47:17",
+    "time": 1579862837084,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "stacked-view"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_1",
+    "index": 9,
+    "date": "24/1/2020 at 10:47:46",
+    "time": 1579862866054,
+    "eventInfo": {
+      "code": "modify",
+      "item": "time",
+      "value": "individual"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "individual",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_1",
+    "index": 10,
+    "date": "24/1/2020 at 10:47:46",
+    "time": 1579862866646,
+    "eventInfo": {
+      "code": "modify",
+      "item": "time",
+      "value": "aggregate"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_1",
+    "index": 11,
+    "date": "24/1/2020 at 10:48:10",
+    "time": 1579862890215,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_2",
+    "index": 12,
+    "date": "24/1/2020 at 11:13:22",
+    "time": 1579864402832,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "index"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_2",
+    "index": 13,
+    "date": "24/1/2020 at 11:13:30",
+    "time": 1579864410193,
+    "eventInfo": {
+      "code": "modify",
+      "item": "typology",
+      "value": "classe.1"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "classe.1"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_2",
+    "index": 14,
+    "date": "24/1/2020 at 11:13:43",
+    "time": 1579864423133,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "details"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_4",
+    "index": 15,
+    "date": "24/1/2020 at 11:13:54",
+    "time": 1579864434651,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "stc"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 16,
+    "date": "24/1/2020 at 11:14:55",
+    "time": 1579864495353,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 17,
+    "date": "24/1/2020 at 11:17:04",
+    "time": 1579864624149,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 18,
+    "date": "24/1/2020 at 11:18:49",
+    "time": 1579864729567,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_4",
+    "index": 19,
+    "date": "24/1/2020 at 11:20:03",
+    "time": 1579864803696,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": true,
+      "dimension": "fullscreen"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "fullscreen"
+          ]
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_4",
+    "index": 20,
+    "date": "24/1/2020 at 11:20:09",
+    "time": 1579864809734,
+    "eventInfo": {
+      "code": "modify",
+      "item": "customize",
+      "value": false,
+      "dimension": "fullscreen"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 21,
+    "date": "24/1/2020 at 11:21:31",
+    "time": 1579864891372,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 22,
+    "date": "24/1/2020 at 11:22:01",
+    "time": 1579864921343,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 23,
+    "date": "24/1/2020 at 11:22:13",
+    "time": 1579864933306,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 24,
+    "date": "24/1/2020 at 11:22:28",
+    "time": 1579864948468,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 25,
+    "date": "24/1/2020 at 11:23:21",
+    "time": 1579865001677,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_3",
+    "index": 26,
+    "date": "24/1/2020 at 11:23:50",
+    "time": 1579865030268,
+    "eventInfo": {
+      "code": "create",
+      "item": "add",
+      "value": "index"
+    },
+    "eventType": "create",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_3",
+    "index": 27,
+    "date": "24/1/2020 at 11:23:55",
+    "time": 1579865035961,
+    "eventInfo": {
+      "code": "modify",
+      "item": "typology",
+      "value": "classe.2"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "classe.2"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_3",
+    "index": 28,
+    "date": "24/1/2020 at 11:24:03",
+    "time": 1579865043962,
+    "eventInfo": {
+      "code": "modify",
+      "item": "typology",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": null
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "tableau_cerise",
+    "parentIndex": 1,
+    "window": "cont_3",
+    "index": 29,
+    "date": "24/1/2020 at 11:24:04",
+    "time": 1579865044417,
+    "eventInfo": {
+      "code": "modify",
+      "item": "typology",
+      "value": "classe.3"
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "classe.3"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 30,
+    "date": "24/1/2020 at 11:24:26",
+    "time": 1579865066566,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "classe.3"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  },
+  {
+    "parentName": "cerise",
+    "parentIndex": 0,
+    "window": null,
+    "index": 31,
+    "date": "24/1/2020 at 11:24:37",
+    "time": 1579865077121,
+    "eventInfo": {
+      "code": "modify",
+      "item": "filtering",
+      "value": null
+    },
+    "eventType": "modify",
+    "settings": {
+      "elements": {
+        "grenoble-tableau_cerise-cont_1-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_1",
+          "depiction": "stacked-view",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ]
+        },
+        "grenoble-tableau_cerise-cont_2-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_2",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [
+            "details"
+          ],
+          "category": "classe.1"
+        },
+        "grenoble-tableau_cerise-cont_4-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_4",
+          "depiction": "stc",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "category": "home",
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": []
+        },
+        "grenoble-tableau_cerise-cont_3-D30": {
+          "label": "Not labeled",
+          "indicator": "activity",
+          "type": "view",
+          "space": "aggregate",
+          "partition": "D30",
+          "client": "tableau_cerise",
+          "window": "cont_3",
+          "depiction": "index",
+          "time": "aggregate",
+          "children": [],
+          "sectors": 0,
+          "period": 4,
+          "fspace": false,
+          "ftime": false,
+          "fzoom": false,
+          "rep": "number",
+          "selected": [],
+          "dataset": "grenoble",
+          "customize": [],
+          "category": "classe.3"
+        }
+      },
+      "dataset": "grenoble",
+      "partition": "D30"
+    }
+  }
+]

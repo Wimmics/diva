@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+case-study/vis/node_modules/**
+case-study/vis/package-lock.json
+case-study/vis/cache/**

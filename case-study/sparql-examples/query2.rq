@@ -1,0 +1,26 @@
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX diva: <http://ns.inria.fr/diva/ontology#>
+prefix dc: <http://purl.org/dc/terms/> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+select distinct ?action ?actionTitle ?step ?actionType ?entityName ?user where {
+
+    ?action a diva:Action ;
+        prov:wasAssociatedWith [ foaf:name ?user ] ; 
+        diva:hasActionType [ skos:prefLabel ?actionType ] ;
+        dc:description ?actionTitle  .
+
+    { ?action prov:used ?entity }
+    UNION
+    { ?entity prov:wasGeneratedBy ?action }
+
+    ?entity a ?class .
+    ?class rdfs:subClassOf diva:Visualization ;
+        rdfs:label ?entityName .
+
+    ?explorationPath a diva:ExplorationPath ;
+        ?p ?action .
+
+    BIND (xsd:integer(REPLACE(STR(?p), ".*[#_]", "")) AS ?step) .
+     
+} ORDER BY ?step
