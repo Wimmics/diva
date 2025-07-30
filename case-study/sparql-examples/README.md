@@ -1,10 +1,8 @@
-# SPARQL Query Examples
+# Implementation of Competency Questions
 
-This directory contains SPARQL queries that demonstrate key competency questions for analyzing analytical provenance information using the DIVA ontology.
+This directory contains SPARQL queries that implements key competency questions (CQ) for analyzing analytical provenance information using the DIVA ontology.
 
-## Competency Questions
-
-### Query 1: What are the sequence of actions of a specific user?
+### CQ 1: What are the sequence of actions of a specific user?
 [query1.rq](query1.rq) retrieves the sequence of actions performed by a specific user during their visualization exploration:
 - Retrieves each action's title and type
 - Displays the step number in the exploration sequence  
@@ -53,7 +51,7 @@ SELECT DISTINCT ?action ?actionTitle ?step ?actionType ?entityName ?user WHERE {
 } ORDER BY ?step
 ```
 
-### Query 2: Do users exhibit similar patterns in their sequences of actions?
+### CQ 2: Do users exhibit similar patterns in their sequences of actions?
 [query2.rq](query2.rq) finds all actions that involved creating or modifying visualizations:
 - Captures both actions that used existing visualizations and those that generated new ones
 - Shows the visualization type for each action
@@ -89,7 +87,7 @@ SELECT DISTINCT ?action ?actionTitle ?step ?actionType ?entityName ?user WHERE {
 } ORDER BY ?step
 ```
 
-### Query 3: Are there observable trends on the way visualizations are used by the users?
+### CQ 3: Are there observable trends on the way visualizations are used by the users?
 [query3.rq](query3.rq) analyzes patterns in how users interact with different visualization types:
 - Counts the number of times each user performed specific action types
 - Groups results by user, action type, and visualization type
