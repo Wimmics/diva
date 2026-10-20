@@ -1,0 +1,1 @@
+[{"label":"What are the sequence of actions of a specific user?","queryFile":"query1.rq"},{"label":"Do users exhibit similar patterns in their sequences of actions?","queryFile":"query2.rq"},{"label":"Are there observable trends on the way visualizations are used by the users?","queryFile":"query3.rq"}]

@@ -28,6 +28,22 @@ A set of competency questions were implemented through SPARQL queries and intera
 
 See the [Case Study](case-study) repository.
 
+## Publications
+
+Aline Menin, Catherine Faron. **DIVA: An Ontology-based Approach to Model User Activity within Visualization Systems.** SAC 2026 - 41st ACM/SIGAPP Symposium on Applied Computing, Mar 2026, Thessaloniki, Greece. ([10.1145/3748522.3779893](https://dx.doi.org/10.1145/3748522.3779893)) ([hal-05403198v1](https://inria.hal.science/hal-05403198v1))
+
+```
+@inproceedings{menin2026diva,
+  TITLE = {{DIVA: An Ontology-based Approach to Model User Activity within Visualization Systems}},
+  AUTHOR = {Menin, Aline and Faron, Catherine},
+  BOOKTITLE = {{SAC 2026 - 41st ACM/SIGAPP Symposium on Applied Computing}},
+  ADDRESS = {Thessaloniki, Greece},
+  YEAR = {2026},
+  MONTH = Mar,
+  DOI = {10.1145/3748522.3779893}
+}
+```
+
 ## Directory Structure
 
 ```

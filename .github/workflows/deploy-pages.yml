@@ -1,0 +1,77 @@
+name: Build and deploy DIVA documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ontology/*.ttl
+      - website/**
+      - case-study/**
+      - .github/workflows/deploy-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install "rdflib>=6.3"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build the case-study visualization
+        working-directory: case-study/vis
+        env:
+          VITE_SITE_ROOT: ../
+        run: |
+          npm ci
+          npm run build
+
+      - name: Generate the ontology page and the thesaurus data
+        run: |
+          python website/ontology/build_doc.py
+          python website/thesaurus/build_thesaurus_data.py
+
+      - name: Assemble the site
+        run: |
+          mkdir -p _site/ontology _site/thesaurus
+          cp website/ontology/index-en.html website/ontology/ontology.{ttl,owl,nt,jsonld} website/ontology/citation.bib _site/ontology/
+          cp -r website/ontology/resources _site/ontology/
+          cp website/thesaurus/index.html website/thesaurus/diva_th_tree.css website/thesaurus/thesaurus_data.js website/thesaurus/thesaurus.ttl _site/thesaurus/
+          cp website/index.html website/home.css website/footer.html website/site-footer.js website/site-footer.css _site/
+          # in the repo the app lives in case-study/vis; in the site it is served from /vis/
+          sed -i 's#\.\./case-study/vis/dist/#vis/#g' _site/index.html
+          sed -i 's#\.\./\.\./case-study/vis/dist/#../vis/#g' _site/ontology/index-en.html _site/thesaurus/index.html
+          cp -r website/images _site/images
+          cp -r case-study/vis/dist _site/vis
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

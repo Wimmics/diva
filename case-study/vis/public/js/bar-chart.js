@@ -48,7 +48,7 @@ class BarChart extends HTMLElement {
             }
 
             #tooltip {
-                position: absolute;
+                position: fixed;
                 pointer-events: none;
                 background: rgba(0, 0, 0, 0.8);
                 color: white;
@@ -110,6 +110,7 @@ class BarChart extends HTMLElement {
             return;
         }
 
+        this.svg.selectAll("*").remove()
         this.createStack()
         this.drawChart()
     }
@@ -119,11 +120,16 @@ class BarChart extends HTMLElement {
         const tooltip = d3.select(this.shadowRoot.querySelector("#tooltip"));
 
         tooltip
-            .style("position", "absolute")
             .style("opacity", 1)
             .html(content)
-            .style("left", `${d3.event.pageX + 10}px`)
-            .style("top", `${d3.event.pageY + 10}px`);
+            .style("left", `${d3.event.clientX + 12}px`)
+            .style("top", `${d3.event.clientY + 12}px`);
+    }
+
+    highlightLegend(key) {
+        d3.select(this.shadowRoot.querySelector(".legend")).selectAll(".legend-item")
+            .style("opacity", d => key === null || d === key ? 1 : 0.35)
+            .style("font-weight", d => d === key ? "bold" : "normal")
     }
 
     hideTooltip() {
@@ -294,20 +300,47 @@ class BarChart extends HTMLElement {
             .attr("stroke-width", 1);
 
         // === Draw stacked bars ===
-        g.append("g")
+        const self = this
+        const userLabel = this.encoding?.x?.label || 'User'
+        const groupLabel = this.encoding?.group?.label || 'Visualization'
+        const colorLabel = this.encoding?.color?.label || 'Action'
+        const yLabel = this.encoding?.y?.label || 'Value'
+
+        const layers = g.append("g")
             .selectAll("g")
             .data(this.stackedSeries)
             .enter().append("g")
+            .attr("class", "layer")
             .attr("fill", d => this.colorScale(d.key)) // actionType
-            .selectAll("rect")
-                .data(d => d)
+
+        layers.each(function (series) {
+            d3.select(this).selectAll("rect")
+                .data(series)
                 .enter().append("rect")
+                .attr("class", "bar")
                 .attr("x", d => x0(d.data.user) + x1(d.data.visType))
                 .attr("y", d => y(d[1]))
                 .attr("height", d => y(d[0]) - y(d[1]))
                 .attr("width", x1.bandwidth())
-                .append('title')
-                .text(d => `${d.data.user}: ${d.data.visType}`)
+                .style("cursor", "pointer")
+                .on("mouseover", function (d) {
+                    g.selectAll(".bar").style("opacity", 0.35)
+                    d3.select(this).style("opacity", 1).attr("stroke", "#222").attr("stroke-width", 1.5)
+                    self.highlightLegend(series.key)
+                })
+                .on("mousemove", function (d) {
+                    self.displayTooltip(
+                        `<strong>${series.key}</strong><br>` +
+                        `${userLabel}: ${d.data.user}<br>` +
+                        `${groupLabel}: ${d.data.visType}<br>` +
+                        `${yLabel}: ${d[1] - d[0]}`)
+                })
+                .on("mouseout", function () {
+                    g.selectAll(".bar").style("opacity", 1).attr("stroke", null)
+                    self.highlightLegend(null)
+                    self.hideTooltip()
+                })
+        })
 
         this.drawLegend()
     
@@ -330,6 +363,8 @@ class BarChart extends HTMLElement {
 
         this.colorScale.domain().forEach((actionType, i) => {
             const item = legend.append("g")
+                .datum(actionType)
+                .attr("class", "legend-item")
                 .attr("transform", `translate(0, ${top + i * (legendItemHeight + legendSpacing)})`);
 
             // Colored box

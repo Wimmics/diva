@@ -1,0 +1,208 @@
+/* Modern layer on top of the WIDOCO stylesheets. Loaded last; relies only on the theme variables
+   (light.css / dark.css) so it follows light, dark and the dark-mode toggle. */
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --surface: color-mix(in srgb, var(--text-color) 4%, var(--background-color));
+  --surface-2: color-mix(in srgb, var(--text-color) 8%, var(--background-color));
+  --line: color-mix(in srgb, var(--text-color) 16%, var(--background-color));
+  --muted: color-mix(in srgb, var(--text-color) 62%, var(--background-color));
+  --accent: var(--htag-text);
+  --href-hover: var(--surface-2);
+  --accent-soft: color-mix(in srgb, var(--accent) 35%, var(--background-color));
+  --radius: 10px;
+  --toc-width: 280px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+th, td, h1, h2, h3, h4, h5, h6 { font-family: var(--font-sans); }
+h1, h2, h3 { background: transparent; letter-spacing: -.01em; }
+h1 { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.2; margin: .2em 0 .3em; }
+h2 { font-size: 1.6rem; font-weight: 650; margin-top: 56px; padding-bottom: 8px; border-bottom: 2px solid var(--line); }
+h3 { font-size: 1.25rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; margin: 1.4em 0 .6em; }
+a { text-underline-offset: 2px; }
+a[href]:hover { background: var(--surface-2); text-decoration: underline; }
+code, pre, tt { font-family: var(--font-mono); font-size: .9em; }
+
+/* ---------- Page layout: sticky ToC sidebar + full-width content ---------- */
+.container {
+  display: grid;
+  grid-template-columns: var(--toc-width) minmax(0, 1fr);
+  column-gap: 40px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 32px 48px;
+}
+.container > * { grid-column: 2; min-width: 0; }
+.container > .head { grid-column: 1 / -1; grid-row: 1; }
+.container > #toc { grid-column: 1; grid-row: 2 / span 200; }
+
+/* ---------- Header ---------- */
+.head { padding: 32px 0 8px; position: relative; }
+.head > div:first-child { font-size: .85rem; color: var(--muted); }
+.head h1 { margin-top: 1rem; }
+.head h2 { margin: 0 0 20px; font-size: 1.05rem; font-weight: 500; color: var(--muted); border: 0; padding: 0; }
+.head hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0 0; }
+.head dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 8px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  width: auto;
+}
+.head dt { margin: 0; font-weight: 600; color: var(--muted); font-size: .9rem; }
+.head dt:first-child { grid-column: 1 / -1; }
+.head dd { margin: 0; overflow-wrap: anywhere; }
+.head dd + dd { grid-column: 2; }
+.head dd img { vertical-align: middle; }
+
+/* "Ontology Specification Draft" side ribbon becomes a pill */
+.status { position: static; transform: none; width: auto; height: auto; opacity: 1; z-index: auto;
+  grid-column: 2; grid-row: 2; text-align: left; margin: 0; filter: none; }
+.status > div { display: inline-block; width: auto; padding: 2px 12px; border-radius: 999px; font-size: .8rem; }
+.status div span { font-family: var(--font-sans); font-size: inherit; }
+
+/* ---------- Table of contents ---------- */
+#toc {
+  position: sticky; top: 72px; align-self: start;
+  max-height: calc(100vh - 88px); overflow-y: auto;
+  margin-top: 8px; padding: 16px 12px 16px 18px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  font-size: .9rem; line-height: 1.35;
+}
+#toc:empty { display: none; }
+#toc h2 { margin: 0 0 10px; padding: 0; border: 0; font-size: .75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+#toc ul { list-style: none; margin: 0; padding: 0; }
+#toc ul ul { margin: 2px 0 6px 14px; border-left: 1px solid var(--line); padding-left: 10px; }
+#toc li { margin: 1px 0; padding: 4px 8px; border-radius: 6px; color: var(--muted); }
+#toc li:hover { background: var(--surface-2); }
+#toc a { color: var(--text-color); text-decoration: none; }
+#toc li.active:not(:has(> ul)) { background: var(--surface-2); box-shadow: inset 3px 0 0 var(--accent-soft); }
+#toc li.active > a { color: var(--accent); font-weight: 600; }
+
+#toc .toc-entities { font-size: .85rem; }
+#toc .toc-entities li { padding: 2px 6px; }
+#toc li.has-entities, #toc li.has-children { position: relative; }
+#toc li.has-entities.active > a { color: var(--accent); font-weight: 600; }
+#toc .toc-count { margin-left: 6px; padding: 0 6px; border-radius: 999px; font-size: .7rem;
+  background: var(--surface-2); color: var(--muted); }
+#toc .toc-toggle { position: absolute; right: 4px; top: 4px; width: 20px; height: 20px; margin: 0; padding: 0; border: 0; background: none;
+  color: var(--muted); cursor: pointer; vertical-align: middle; }
+#toc .toc-toggle::before { content: "\25BE"; display: inline-block; transition: transform .15s; }
+#toc li.collapsed > .toc-toggle::before { transform: rotate(-90deg); }
+#toc li.collapsed > ul { display: none; }
+#toc .toc-node-toggle { top: 2px; }
+#toc li:not(.has-children):not(.has-entities) > .toc-node-toggle { display: none; }
+
+/* ---------- Sections ---------- */
+.backlink { float: right; margin-left: 12px; font-size: .75rem; font-weight: 500; line-height: 1.6;
+  padding: 1px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--muted); }
+.backlink a { color: inherit; }
+h3.list { border: 0; margin-top: 32px; }
+
+/* ---------- Tables ---------- */
+#ns { overflow-x: auto; }
+table {
+  width: 100%; margin: 16px 0; border-collapse: separate; border-spacing: 0;
+  background: var(--background-color); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; font-size: .92rem;
+}
+table caption { caption-side: top; text-align: left; padding: 0 2px 8px; color: var(--muted); font-size: .85rem; }
+table caption a { color: inherit; }
+table td, table th { padding: 10px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+table tr:last-child td { border-bottom: 0; }
+table tbody tr:nth-child(even) { background: var(--surface); }
+table tbody tr:hover { background: var(--surface-2); }
+table td:first-child { width: 1%; white-space: nowrap; font-weight: 600; }
+table td:last-child { font-family: var(--font-mono); font-size: .85rem; overflow-wrap: anywhere; }
+table th { background: var(--surface-2); font-weight: 600; }
+.head table { margin-left: 0; }
+
+/* ---------- Class / property index (chips) ---------- */
+h4 + .hlist, .hlist {
+  display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 12px; border: 0; background: transparent;
+}
+.hlist li { display: block; padding: 0; }
+.hlist li a { display: inline-block; padding: 3px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); text-decoration: none; font-size: .88rem; }
+.hlist li a:hover { background: var(--surface-2); border-color: var(--accent-soft); }
+
+/* ---------- Entity cards ---------- */
+.entity { margin: 16px 0; padding: 18px 22px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--background-color); box-shadow: 0 1px 2px rgb(0 0 0 / 6%); }
+.entity:target { border-color: var(--accent-soft); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent); background: var(--surface); }
+.entity h3 { margin: 0 0 8px; padding: 0; border: 0; }
+.entity > p { margin: 4px 0; overflow-wrap: anywhere; }
+.entity .comment { margin: 10px 0; }
+.entity dl { width: auto; }
+.description { border: 0; border-radius: 8px; background: var(--surface); margin-top: 12px; padding: 10px 16px; }
+.description dl { background: transparent; }
+.description dt { margin-top: 10px; font-size: .78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--muted); }
+.description dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+.entity dd { margin-left: 0; }
+.definedBy dt { font-size: .85rem; color: var(--muted); }
+sup { font-family: var(--font-mono); font-size: .7em; }
+
+pre { overflow-x: auto; padding: 14px 16px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); }
+img { max-width: 100%; height: auto; }
+.endnote { border-top: 1px solid var(--line); color: var(--muted); }
+
+/* dark-mode toggle stays out of the way */
+.darkmode { position: fixed; top: 10px; right: 14px; left: auto; bottom: auto; z-index: 20; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  :root { --toc-width: 100%; }
+  .container { display: block; padding: 0 16px 32px; }
+  #toc { position: static; max-height: 260px; margin: 12px 0 0; }
+  .status { margin-top: 12px; }
+  .head dl { grid-template-columns: 1fr; gap: 2px; }
+  .head dd + dd { grid-column: 1; }
+  .head dt { margin-top: 8px; }
+  .backlink { display: none; }
+  table td:first-child { white-space: normal; }
+}
+@media print {
+  #toc, .darkmode { display: none; }
+  .container { display: block; }
+}
+
+/* ---------- WebVOWL diagram ---------- */
+#webvowl-diagram { margin: 16px 0 24px; }
+#webvowl-diagram h4 { margin-bottom: 8px; }
+#webvowl-diagram .webvowl-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between;
+  align-items: center; margin-bottom: 8px; font-size: .85rem; color: var(--muted); }
+#webvowl-diagram .webvowl-open { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
+#webvowl-diagram .webvowl-open:hover { background: var(--surface-2); }
+#webvowl-diagram iframe { display: block; width: 100%; height: 70vh; min-height: 420px;
+  border: 1px solid var(--line); border-radius: var(--radius); background: #fff; resize: vertical; }
+
+/* ---------- Site navigation bar (shared across DIVA pages) ---------- */
+body > nav { background: #1f4e79; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.2); position: sticky; top: 0; z-index: 1000;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+body > nav .inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 56px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 24px; }
+body > nav .title:hover { background: transparent; }
+body > nav .title { font-size: 1.25rem; font-weight: 600; letter-spacing: .02em; color: #fff; text-decoration: none; }
+body > nav .links { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap; }
+body > nav .links a { color: #fff; text-decoration: none; font-size: .95rem; opacity: .85; padding: 4px 0; border-bottom: 2px solid transparent; }
+body > nav .links a:hover { opacity: 1; background: transparent; }
+body > nav .links a.active { opacity: 1; border-bottom-color: #fff; }

@@ -1,3 +1,6 @@
+// index in the select (0 is the placeholder): 2 = second competency question
+const DEFAULT_QUESTION = 2
+
 class DIVADemo {
     constructor() {
         this.currentData // SPARQL results
@@ -14,7 +17,7 @@ class DIVADemo {
     }
 
     async set() {
-        let queries = await fetch(`/all-queries/`).then(res => res.json())
+        let queries = await fetch('api/queries.json').then(res => res.json())
 
         let queriesSelect = [{label: 'Select a competency question', query: null}].concat(queries)
         d3.select('select#competency-questions')
@@ -24,7 +27,7 @@ class DIVADemo {
             .attr('value', d => d.queryFile)
             .text(d => d.label)
             .property('disabled', (_,i) => i === 0)
-            .property('selected', (_,i) => i === 0)
+            .property('selected', (_,i) => i === DEFAULT_QUESTION)
 
 
         // Listen for when a tab is shown
@@ -41,16 +44,8 @@ class DIVADemo {
                 case "#results":
                     this.tableElement.set(this.currentData)
                     break;
-                case "#muvin":
-                    if (this.currentConfig.muvin)
-                        this.setMuvin(this.currentData, this.currentConfig.muvin)
-                    else
-                        this.hideVis('muvin')
-                    break;
-                case "#barchart":
-                    if (this.currentConfig.barchart)
-                        this.setBarChart(this.currentData, this.currentConfig.barchart)
-                    else this.hideVis('barchart')
+                case "#vis":
+                    this.showVisualization()
                     break
                 }
             });
@@ -60,46 +55,17 @@ class DIVADemo {
             const selectElement = event.target;
             this.currentQueryName = selectElement.value;
 
-            this.currentData = await fetch(`/corese-query?queryFile=${this.currentQueryName}`).then(response => response.json())
+            this.currentData = await fetch(`api/results/${this.currentQueryName}.json`).then(response => response.json())
 
-            this.currentConfig = await fetch(`/query-config?queryFile=${this.currentQueryName}`).then(response => response.json())
+            this.currentConfig = await fetch(`api/config/${this.currentQueryName}.json`).then(response => response.json())
 
-            this.currentQuery = await fetch(`/query?queryFile=${this.currentQueryName}`).then(response => response.text())
+            this.currentQuery = await fetch(`api/query/${this.currentQueryName}`).then(response => response.text())
 
             this.setQuery()
         });
 
-        document.querySelector("#clear-cache").addEventListener('click', async (event) => {
-            try {
-                const response = await fetch('/clear-cache');
-
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end', // Top-right corner
-                    showConfirmButton: false,
-                    timer: 2000,
-                    timerProgressBar: true,
-                });
-
-                if (response.ok) {
-                    Toast.fire({
-                        icon: 'success',
-                        title: 'Cache cleared',
-                    });
-                } else {
-                    Toast.fire({
-                        icon: 'error',
-                        title: 'Failed to clear cache',
-                    });
-                }
-            } catch (error) {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Could not connect to the server.',
-                });
-            }
-        });
+        if (queriesSelect[DEFAULT_QUESTION])
+            document.querySelector('#competency-questions').dispatchEvent(new Event('change'))
     }
 
     setQuery() {
@@ -138,6 +104,18 @@ class DIVADemo {
         nodes = [...new Set(nodes)];
         
         this.muvinElement.launch(nodes);
+    }
+
+    showVisualization() {
+        const cfg = this.currentConfig
+        const isMuvin = !!cfg.muvin, isBar = !!cfg.barchart
+        document.querySelector('#muvin-container').style.display = isMuvin ? 'block' : 'none'
+        document.querySelector('#barchart-container').style.display = isBar ? 'block' : 'none'
+        const msg = document.querySelector('#muvin-message')
+        msg.style.display = (isMuvin || isBar) ? 'none' : 'block'
+        msg.textContent = 'This query has no visualization'
+        if (isMuvin) this.setMuvin(this.currentData, cfg.muvin)
+        else if (isBar) this.setBarChart(this.currentData, cfg.barchart)
     }
 
     hideVis(id) {

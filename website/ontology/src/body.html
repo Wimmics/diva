@@ -1,0 +1,81 @@
+<body>
+<nav><div class="inner"><a class="title" href="../index.html">DIVA</a><span class="links"><a href="../index.html">Home</a><a href="index-en.html" class="active">Ontology</a><a href="../thesaurus/index.html">Thesaurus</a><a href="../../case-study/vis/dist/">Case study</a><a href="https://github.com/Wimmics/diva">GitHub</a></span></div></nav>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>@TITLE@</h1>
+<h2>Release: @RELEASE@</h2>
+
+<dl>
+@METADATA@
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>@STATUS@</span>
+</div>
+</div><div id="toc"></div>
+
+<!--INTRODUCTION SECTION-->
+<div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+@INTRODUCTION@</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+@NAMESPACES@</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!--OVERVIEW SECTION-->
+<div id="overview"><h2 id="overv" class="list">@SHORT@: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<div id="webvowl-diagram" data-ontology-url="@WEBVOWL_URL@"></div>
+@OVERVIEW@
+</div>
+
+<!--DESCRIPTION SECTION-->
+<div id="description"><h2 id="desc" class="list">@SHORT@: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+@DESCRIPTION@</span></div>
+
+<!--CROSSREF SECTION-->
+<div id="crossref"><h2 id="crossreference" class="list">Cross-reference for @SHORT@ classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by @SHORT@.
+@CROSSREF@
+<div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+
+<!--REFERENCES SECTION-->
+<div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+@REFERENCES@</span>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+@ACKNOWLEDGMENTS@
+</div>
+
+</div>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="../site-footer.js"></script>
+<script src="resources/modern.js"></script>
+</body>
+</html>

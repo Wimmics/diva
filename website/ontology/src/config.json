@@ -1,0 +1,31 @@
+{
+  "short_name": "DIVA",
+  "ontology_file": "../../../ontology/diva.ttl",
+  "status": "Ontology Specification Draft",
+  "this_version": "ontology.ttl",
+  "latest_version": "ontology.ttl",
+  "publisher": "University Côte d'Azur, CNRS, Inria",
+  "license_label": "Apache 2.0",
+  "see_also": [
+    {
+      "label": "DIVA Thesaurus",
+      "url": "../thesaurus/index.html"
+    }
+  ],
+  "webvowl_ontology_url": "https://raw.githubusercontent.com/Wimmics/diva/main/ontology/diva.ttl",
+  "ontology_file_url": "ontology.ttl",
+  "citation": {
+    "text": "Aline Menin, Catherine Faron. DIVA: An Ontology-based Approach to Model User Activity within Visualization Systems. SAC 2026 - 41st ACM/SIGAPP Symposium on Applied Computing, Mar 2026, Thessaloniki, Greece.",
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://dx.doi.org/10.1145/3748522.3779893"
+      },
+      {
+        "label": "HAL",
+        "url": "https://inria.hal.science/hal-05403198v1"
+      }
+    ],
+    "bibtex_file": "citation.bib"
+  }
+}

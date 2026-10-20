@@ -3,6 +3,19 @@
 @prefix diva_th: <http://ns.inria.fr/diva/thesaurus#> . 
 @prefix diva: <http://ns.inria.fr/diva/ontology#> .
 
+
+diva_th: 
+    dcterms:title "DIVA Thesaurus"@en ;
+    dcterms:creator "Aline MENIN", "Catherine FARON" ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:modified "2025-07-30" ;
+    dcterms:description "The DIVA thesaurus provides controlled vocabulary for data, interaction, visualization, and analysis in the context of data visualizations."@en ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcat:landingPage <https://github.com/Wimmics/diva> ;
+    owl:versionInfo "1.0" ;
+    dcterms:publisher "Inria", "University Côte d'Azur", "CNRS" .
+
+
 ### ----- SKOS Concept Schemes ----- ######
 
 # ----- SKOS Concept Scheme for Visualization Marks

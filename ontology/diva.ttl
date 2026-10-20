@@ -1,5 +1,5 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -16,12 +16,13 @@
 # Uses rdf:value to define the value of properties, such as the title of a visualization or the name of a user
 
 # --- Exploration Path ---
-# The ExplorationPath class is a subclass of rdfs:Seq
+# The ExplorationPath class is a subclass of rdf:Seq
 # It represents a sequence of tasks or activities that are performed to achieve a specific goal in a visualization context.
 # Uses rdfs:member to define the actions in the exploration path
 # Uses rdf:_i to define the order of the actions in the exploration path
 
-diva:ExplorationPath a rdfs:Seq ;
+diva:ExplorationPath a owl:Class ;
+    rdfs:subClassOf rdf:Seq ;
     rdfs:isDefinedBy diva: ; 
     rdfs:label "Exploraton Path"@en ;
     rdfs:comment "A sequence of tasks or activities that are performed to achieve a specific goal in a visualization context."@en .
@@ -297,7 +298,7 @@ diva:hasSignalType a owl:ObjectProperty ;
     rdfs:domain diva:Signal ;
     rdfs:range diva:SignalType ; 
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Signal Type"@en ;
+    rdfs:label "has signal type"@en ;
     rdfs:comment "The type of signal, such as 'zoom', 'pan', 'filter'."@en .
 
 
@@ -396,7 +397,7 @@ diva:hasEventType a owl:ObjectProperty ;
     rdfs:domain diva:Event ;
     rdfs:range diva:EventType ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Event Type"@en ;
+    rdfs:label "has event type"@en ;
     rdfs:comment "The type of event interaction performed in the visualization, such as 'click', 'hover', 'drag'."@en .
 
 diva:EventType a owl:Class ;
@@ -404,18 +405,18 @@ diva:EventType a owl:Class ;
     rdfs:label "Event Type"@en ;
     rdfs:comment "A type of event interaction that can be performed in the context of a visualization, such as 'click', 'hover', 'drag'."@en .
 
-diva:hasPositionX a owl:DatatypeProperty ;
+diva:hasXPosition a owl:DatatypeProperty ;
     rdfs:domain diva:Event ;
     rdfs:range rdfs:Literal ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Interaction X Position"@en ;
+    rdfs:label "has X position"@en ;
     rdfs:comment "Position of the interaction on the X-axis for all interaction types."@en .
 
-diva:hasPositionY a owl:DatatypeProperty ;
+diva:hasYPosition a owl:DatatypeProperty ;
     rdfs:domain diva:Event ;
     rdfs:range rdfs:Literal ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Interaction Y Position"@en ;
+    rdfs:label "has Y position"@en ;
     rdfs:comment "Position of the interaction on the Y-axis for all interaction types."@en .
 
 # View Manipulation
@@ -439,14 +440,14 @@ diva:hasViewManipulationType a owl:ObjectProperty ;
     rdfs:domain diva:ViewManipulation ;
     rdfs:range diva:ViewManipulationType ; 
     rdfs:isDefinedBy diva: ;
-    rdfs:label "View Manipulation Type"@en ;
+    rdfs:label "has view manipulation type"@en ;
     rdfs:comment "The type of view manipulation performed in the interaction, such as 'zoom', 'pan', 'filter'."@en .
 
 diva:hasUIElement a owl:ObjectProperty ;
     rdfs:domain diva:ViewManipulation ;
     rdfs:range diva:UIElement ;
     rdfs:isDefinedBy diva: ; 
-    rdfs:label "UI Element"@en ;
+    rdfs:label "has UI element"@en ;
     rdfs:comment "The UI element involved in the manipulation, such as 'slider', 'button', 'dropdown'."@en .
 
 # Actions
@@ -465,21 +466,21 @@ diva:nextAction a owl:ObjectProperty ;
     rdfs:domain diva:Action ;
     rdfs:range diva:Action ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Next Action"@en ;
+    rdfs:label "next action"@en ;
     rdfs:comment "The next action to be performed in the workflow."@en .
 
 diva:previousAction a owl:ObjectProperty ;
     rdfs:domain diva:Action ;
     rdfs:range diva:Action ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Previous Action"@en ;
+    rdfs:label "previous action"@en ;
     rdfs:comment "The previous action in the workflow."@en .
 
 diva:hasActionType a owl:ObjectProperty ;
     rdfs:domain diva:Action ;
     rdfs:range diva:ActionType ; 
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Action Type"@en ;
+    rdfs:label "has action type"@en ;
     rdfs:comment "The type of action performed in the interaction, such as 'search', 'identify', 'filter'."@en .
 
 # use dcterms:title to describe the task (it is high level, domain dependent and cannot be classed)
@@ -493,7 +494,7 @@ diva:hasAction a owl:ObjectProperty ;
     rdfs:domain diva:Task ;
     rdfs:range diva:Action ;
     rdfs:isDefinedBy diva: ;
-    rdfs:label "Task Action"@en ;
+    rdfs:label "has action"@en ;
     rdfs:comment "The action associated with the task, representing a cognitive sub-task or goal."@en .
 
 # ----- Annotations (for capturing user intentions and insights) -----
@@ -523,8 +524,11 @@ diva:rationale a oa:Motivation ;
 ## definition of DIVA ontology
 diva: a owl:Ontology ;
     dcterms:title "Data, Interaction, Visualization, and Analysis (DIVA) Ontology" ;
-    dcterms:creator [a foaf:Person; foaf:name "Aline Menin"],
-        [a foaf:Person; foaf:name "Catherine Faron"] ;
-    dcterms:modified "2025-07-30T09:05:00Z" ;
-    rdfs:comment "The DIVA Ontology defines concepts and relationships for data, interaction, visualization, and analysis in the context of data visualizations."@en ;
-    owl:versionInfo "2025-07-30T09:05:00Z" .
+    dcterms:creator "Aline MENIN", "Catherine FARON" ;
+    dcterms:modified "2025-07-30" ;
+    dcterms:description "The DIVA Ontology defines concepts and relationships for data, interaction, visualization, and analysis in the context of data visualizations."@en ;
+    owl:versionInfo "1.0" ;
+    dcat:landingPage <https://github.com/Wimmics/diva> ;
+    dcterms:license  <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:created "2025"^^xsd:gYear ;
+    dcterms:publisher "Inria", "University Côte d'Azur", "CNRS" .

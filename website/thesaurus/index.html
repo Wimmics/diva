@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIVA Thesauri</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" charset="utf-8"></script>
+	<script src="thesaurus_data.js"></script>
+
+	<link rel="stylesheet" href="diva_th_tree.css">
+	
+</head>
+<body>
+<nav><div class="inner"><a class="title" href="../index.html">DIVA</a><span class="links"><a href="../index.html">Home</a><a href="../ontology/index-en.html">Ontology</a><a href="index.html" class="active">Thesaurus</a><a href="../../case-study/vis/dist/">Case study</a><a href="https://github.com/Wimmics/diva">GitHub</a></span></div></nav>
+
+<main>
+<section class="card">
+	<h2>About the thesaurus</h2>
+	<p class="placeholder">The DIVA thesauri provide controlled vocabularies for describing and classifying concepts related to user interactions and visualization systems, including event and action types, view manipulations, visual marks, channels, and user-interface elements. They support consistent semantic annotation of interaction data and facilitate its integration and analysis across visualization systems.</p>
+	</section>
+	
+	<section class="card">
+		<h2>Browse concept schemes</h2>
+		<div class="controls">
+			<label for="scheme-select">Concept scheme</label>
+			<select id="scheme-select"></select>
+		</div>
+		<p id="scheme-desc"></p>
+		<p class="hint">The full hierarchy is shown; click a circle to fold or unfold a branch. Hover a node for its labels and definition. Click a label to open its URI.</p>
+		<div id="body"></div>
+	</section>
+</main>
+
+<div id="tooltip"></div>
+
+<script>
+	const m = [20, 120, 20, 120];
+	const w = 1280 - m[1] - m[3];
+	const colWidth = 180;
+	const rowHeight = 26;
+	const linkPath = d3.linkHorizontal().x(d => d.y).y(d => d.x);
+
+	let root, nextId = 0;
+
+	const svg = d3.select("#body").append("svg")
+		.attr("width", w + m[1] + m[3]);
+	const canvas = svg.append("g").attr("transform", `translate(${m[3]},${m[0]})`);
+	const linkLayer = canvas.append("g");
+	const nodeLayer = canvas.append("g");
+
+	const esc = t => String(t).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+	const hasChildren = d => d.children || d._children;
+
+	function highlightPath(d) {
+		const onPath = new Set(d.ancestors());
+		d3.select("#body").classed("focus", true);
+		nodeLayer.selectAll("g.node").classed("on-path", n => onPath.has(n));
+		linkLayer.selectAll("path.link").classed("on-path", l => onPath.has(l.target));
+	}
+
+	function clearPath() {
+		d3.select("#body").classed("focus", false);
+		canvas.selectAll(".on-path").classed("on-path", false);
+	}
+
+	function showTooltip(event, d) {
+		highlightPath(d);
+		const data = d.data;
+		let html = '<div class="label">' + (data.prefLabels || [data.name]).map(esc).join("<br>") + "</div>";
+		if (data.altLabels && data.altLabels.length)
+			html += '<div class="alt">Also: ' + data.altLabels.map(esc).join(", ") + "</div>";
+		(data.definition || []).forEach(t => { html += '<div class="def">' + esc(t) + "</div>"; });
+		html += '<div class="uri">' + esc(data.uri) + "</div>";
+
+		d3.select("#tooltip").html(html).style("display", "block");
+		moveTooltip(event);
+	}
+
+	function moveTooltip(event) {
+		const tip = document.getElementById("tooltip");
+		let x = event.pageX + 16;
+		const y = event.pageY + 16;
+		if (x + tip.offsetWidth > window.scrollX + window.innerWidth - 8) x = event.pageX - tip.offsetWidth - 16;
+		d3.select(tip).style("left", x + "px").style("top", y + "px");
+	}
+
+	function hideTooltip() {
+		clearPath();
+		d3.select("#tooltip").style("display", "none");
+	}
+
+	function toggle(d) {
+		if (d.children) { d._children = d.children; d.children = null; }
+		else { d.children = d._children; d._children = null; }
+	}
+
+	function render(scheme) {
+		root = d3.hierarchy(scheme);
+		// size the canvas to the fully expanded tree so every node is visible
+		const h = Math.max(400, root.leaves().length * rowHeight);
+		svg.attr("height", h + m[0] + m[2]);
+		tree.size([h, w]);
+		root.x0 = h / 2;
+		root.y0 = 0;
+		nodeLayer.selectAll("*").remove();
+		linkLayer.selectAll("*").remove();
+		d3.select("#scheme-desc").text((scheme.definition || []).join(" "));
+		update(null, root);
+	}
+
+	const tree = d3.tree();
+
+	function update(event, source) {
+		const t = svg.transition().duration(event && event.altKey ? 5000 : 500);
+
+		tree(root);
+		root.each(d => { d.y = d.depth * colWidth; d.id ??= ++nextId; });
+		const nodes = root.descendants();
+
+		const node = nodeLayer.selectAll("g.node")
+			.data(nodes, d => d.id)
+			.join(
+				enter => {
+					const g = enter.append("g")
+						.attr("class", "node")
+						.attr("transform", `translate(${source.y0},${source.x0})`)
+						.on("click", (e, d) => { toggle(d); update(e, d); })
+						.on("mouseover", showTooltip)
+						.on("mousemove", moveTooltip)
+						.on("mouseout", hideTooltip);
+					g.append("circle").attr("r", 1e-6);
+					g.append("a")
+						.attr("href", d => d.data.uri)
+						.attr("target", "_blank")
+						.on("click", e => e.stopPropagation())
+						.append("text")
+						.attr("dy", ".35em")
+						.text(d => d.data.name ?? d.data.uri)
+						.style("fill-opacity", 1e-6);
+					return g;
+				},
+				update => update,
+				exit => exit.call(g => {
+					g.transition(t).attr("transform", `translate(${source.y},${source.x})`).remove();
+					g.select("circle").transition(t).attr("r", 1e-6);
+					g.select("text").transition(t).style("fill-opacity", 1e-6);
+				})
+			);
+
+		node.transition(t).attr("transform", d => `translate(${d.y},${d.x})`);
+		node.select("circle").transition(t)
+			.attr("r", 6)
+			.style("fill", d => d._children ? "lightsteelblue" : "#fff");
+		node.select("text")
+			.attr("x", d => hasChildren(d) ? -10 : 10)
+			.attr("text-anchor", d => hasChildren(d) ? "end" : "start")
+			.transition(t).style("fill-opacity", 1);
+
+		linkLayer.selectAll("path.link")
+			.data(root.links(), d => d.target.id)
+			.join(
+				enter => enter.append("path")
+					.attr("class", "link")
+					.attr("d", () => {
+						const o = {x: source.x0, y: source.y0};
+						return linkPath({source: o, target: o});
+					}),
+				update => update,
+				exit => exit.call(p => p.transition(t)
+					.attr("d", () => {
+						const o = {x: source.x, y: source.y};
+						return linkPath({source: o, target: o});
+					})
+					.remove())
+			)
+			.transition(t).attr("d", linkPath);
+
+		root.each(d => { d.x0 = d.x; d.y0 = d.y; });
+	}
+
+	const select = d3.select("#scheme-select");
+	select.selectAll("option")
+		.data(SCHEMES)
+		.join("option")
+		.attr("value", (d, k) => k)
+		.text(d => d.name);
+
+	select.on("change", function() {
+		location.hash = SCHEMES[this.value].uri.split("#")[1];
+		render(SCHEMES[this.value]);
+	});
+
+	let initial = SCHEMES.findIndex(s => location.hash === "#" + s.uri.split("#")[1]);
+	if (initial < 0) initial = 0;
+	select.property("value", initial);
+
+	render(SCHEMES[initial]);
+</script>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="../site-footer.js"></script>
+</body>
+</html>

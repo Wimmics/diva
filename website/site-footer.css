@@ -1,0 +1,6 @@
+/* footer */
+.site-footer { background: #fff; border-top: 1px solid #dde3ea; margin-top: 48px; padding: 28px 32px; text-align: center; color: #6b7885; font-size: .9rem; font-family: inherit; }
+.site-footer .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px 40px; margin-bottom: 14px; }
+.site-footer .logos img { height: 48px; width: auto; max-width: 190px; object-fit: contain; }
+.site-footer p { margin: 0; }
+.site-footer a:hover { background: transparent; }

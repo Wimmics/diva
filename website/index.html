@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIVA: Data, Interaction, Visualization, and Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<nav><div class="inner">
+	<a class="title" href="index.html">DIVA</a>
+	<span class="links">
+		<a href="index.html" class="active">Home</a>
+		<a href="ontology/index-en.html">Ontology</a>
+		<a href="thesaurus/index.html">Thesaurus</a>
+		<a href="../case-study/vis/dist/">Case study</a>
+		<a href="https://github.com/Wimmics/diva">GitHub</a>
+	</span>
+</div></nav>
+
+<header class="hero"><div class="inner">
+	<h1>DIVA: Data, Interaction, Visualization, and Analysis</h1>
+	<p>An ontology for representing and analyzing analytical provenance information from visualization tools.</p>
+</div></header>
+
+<main>
+<div class="cards">
+	<a class="card" href="ontology/index-en.html">
+		<h3>Ontology</h3>
+		<p>The reference documentation of the DIVA ontology: classes, properties, individuals and an interactive diagram.</p>
+		<span class="go">Browse the ontology →</span>
+	</a>
+	<a class="card" href="thesaurus/index.html">
+		<h3>Thesaurus</h3>
+		<p>The SKOS controlled vocabularies for visualization and interaction concepts, as explorable trees.</p>
+		<span class="go">Browse the thesaurus →</span>
+	</a>
+	<a class="card" href="../case-study/vis/dist/">
+		<h3>Case study</h3>
+		<p>An interactive view of the eSTIMe case study, built on SPARQL competency questions over the DIVA knowledge graph.</p>
+		<span class="go">Open the visualization →</span>
+	</a>
+</div>
+
+<section id="overview">
+	<h2>Overview</h2>
+	<div class="panel">
+		<p>DIVA provides an ontology and a thesaurus to:</p>
+		<ul class="features">
+			<li>Model user interactions with visualization tools</li>
+			<li>Capture exploration paths and patterns</li>
+			<li>Enable semantic analysis of visual analytics processes</li>
+			<li>Support reuse and comparison of analysis strategies</li>
+		</ul>
+		<p>The DIVA namespace is <span class="ns">http://ns.inria.fr/diva/</span></p>
+	</div>
+</section>
+
+<section id="case-study">
+	<h2>Case study: the eSTIMe visualization system</h2>
+	<div class="panel">
+		<p>To demonstrate the usage of the DIVA ontology, we lifted system logs describing analytical provenance information from the eSTIMe visualization system, a multi-screen visualization platform designed for exploring urban mobility data.</p>
+		<p>The logs describe the exploration processes of six users, varying from 31 to 207 steps (i.e., performed actions within the visualization). Each log entry includes metadata such as timestamp, action type, target, view context, and descriptors of the resulting artifacts (e.g., visualizations or datasets). The structured JSON data was transformed into an RDF knowledge graph with the <code>rdflib</code> library in Python.</p>
+		<p>A set of competency questions were implemented through SPARQL queries and interactive visualization tools, supporting visual exploration of analytical provenance information.</p>
+		<figure>
+			<img src="images/DIVA-KG-example.png" alt="Example of a DIVA knowledge graph">
+			<figcaption>Example of an exploration path represented with DIVA.</figcaption>
+		</figure>
+		<p class="note">The interactive visualization (<a href="../case-study/vis/dist/">open it here</a>) is built from <a href="https://github.com/Wimmics/diva/tree/main/case-study/vis">case-study/vis</a>; the SPARQL results are precomputed with Corese beforehand and committed.</p>
+	</div>
+</section>
+
+<section id="publications">
+	<h2>Publications</h2>
+	<div class="panel">
+		<p>Aline Menin, Catherine Faron. <strong>DIVA: An Ontology-based Approach to Model User Activity within Visualization Systems.</strong> SAC 2026 - 41st ACM/SIGAPP Symposium on Applied Computing, Mar 2026, Thessaloniki, Greece. (<a href="https://dx.doi.org/10.1145/3748522.3779893">10.1145/3748522.3779893</a>) (<a href="https://inria.hal.science/hal-05403198v1">hal-05403198v1</a>)</p>
+<pre>@inproceedings{menin2026diva,
+  TITLE = {{DIVA: An Ontology-based Approach to Model User Activity within Visualization Systems}},
+  AUTHOR = {Menin, Aline and Faron, Catherine},
+  BOOKTITLE = {{SAC 2026 - 41st ACM/SIGAPP Symposium on Applied Computing}},
+  ADDRESS = {Thessaloniki, Greece},
+  YEAR = {2026},
+  MONTH = Mar,
+  DOI = {10.1145/3748522.3779893}
+}</pre>
+	</div>
+</section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="site-footer.js"></script>
+</body>
+</html>
