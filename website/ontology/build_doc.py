@@ -13,7 +13,7 @@ property / individual cross-reference, overview lists) is regenerated from
     src/head.html, src/body.html   page skeleton (@TOKENS@ are substituted)
 
 Usage:  python3 build_doc.py            (from anywhere)
-Writes: index-en.html and ontology.{ttl,owl,nt,jsonld} next to this script.
+Writes: index.html and ontology.{ttl,owl,nt,jsonld} next to this script.
 Requires: rdflib >= 6.
 """
 import json
@@ -279,7 +279,7 @@ SERIALIZATIONS = (("owl", "xml"), ("nt", "nt"), ("jsonld", "json-ld"))
 def main():
     config = json.loads(read("config.json"))
     doc = Doc(config)
-    (HERE / "index-en.html").write_text(doc.page(), encoding="utf-8")
+    (HERE / "index.html").write_text(doc.page(), encoding="utf-8")
     shutil.copyfile((SRC / config["ontology_file"]).resolve(), HERE / "ontology.ttl")
     bib = config.get("citation", {}).get("bibtex_file")
     if bib:
@@ -287,7 +287,7 @@ def main():
     for ext, fmt in SERIALIZATIONS:
         doc.g.serialize(destination=str(HERE / f"ontology.{ext}"), format=fmt)
     counts = {k: len(doc.by_kind(k)) for k in KINDS}
-    print(f"Generated index-en.html and ontology.{{owl,nt,jsonld}} from {config['ontology_file']}: {counts}")
+    print(f"Generated index.html and ontology.{{owl,nt,jsonld}} from {config['ontology_file']}: {counts}")
 
 
 if __name__ == "__main__":
