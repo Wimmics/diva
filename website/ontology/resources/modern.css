@@ -41,10 +41,14 @@ code, pre, tt { font-family: var(--font-mono); font-size: .9em; }
   display: grid;
   grid-template-columns: var(--toc-width) minmax(0, 1fr);
   column-gap: 40px;
-  max-width: 1200px;
+  max-width: none;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 32px 48px;
+  margin: 32px 28px 24px;
+  padding: 0 24px 40px;
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
 }
 .container > * { grid-column: 2; min-width: 0; }
 .container > .head { grid-column: 1 / -1; grid-row: 1; }
@@ -206,3 +210,5 @@ body > nav .links { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap
 body > nav .links a { color: #fff; text-decoration: none; font-size: .95rem; opacity: .85; padding: 4px 0; border-bottom: 2px solid transparent; }
 body > nav .links a:hover { opacity: 1; background: transparent; }
 body > nav .links a.active { opacity: 1; border-bottom-color: #fff; }
+
+html body { background: #f4f6f9; }

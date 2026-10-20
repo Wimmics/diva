@@ -8,7 +8,7 @@
                     "field": "user",
                     "label": "User"
                 },
-                "links": {
+                "events": {
                     "field": "entityName",
                     "browse": { "field": null },
                     "title": { "field": "entityName" },
@@ -44,7 +44,7 @@
                     "field": "user",
                     "label": "User"
                 },
-                "links": {
+                "events": {
                     "field": "entityName",
                     "title": { "field": "entityName" },
                     "label": "Visualization Technique"
