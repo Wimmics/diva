@@ -1,7 +1,7 @@
 
 # DIVA: Data, Interaction, Visualization, and Analysis 
 
-An ontology for representing and analyzing analytical provenance information from visualization tools.
+An ontology and a thesaurus for representing and analyzing analytical provenance information from visualization tools.
 
 ## Overview
 
@@ -16,11 +16,11 @@ The DIVA namespace is ``http://ns.inria.fr/diva/``
 
 ## RDF Data Modeling
 
-See the [DIVA ontology](ontology) repository.
+See the [ontology](ontology) repository.
 
 ## Case Study: eSTIMe visualization system
 
-To demonstrate the usage of DIVA ontology, we lifted system logs describing analytical provenance information from the eSTIMe visualization system, a multi-screen visualization platform designed for exploring urban mobility data. 
+To demonstrate the usage of DIVA, we lifted system logs describing analytical provenance information from the eSTIMe visualization system, a multi-screen visualization platform designed for exploring urban mobility data. 
 
 The system logs describe the exploration processes of six users, varying from 31 to 207 steps (i.e., performed actions within the visualization). Each log was recorded as a JSON array, structured sequentially to represent user interactions and the corresponding visualization states. Each log entry includes metadata such as timestamp, action type, target, view context, and descriptors of the resulting artifacts (e.g., visualizations or datasets). We used the `rdflib` library in `Python` to transform this structured JSON data into an RDF KG.
 
@@ -48,15 +48,19 @@ Aline Menin, Catherine Faron. **DIVA: An Ontology-based Approach to Model User A
 
 ```
 diva/
-├── ontology/              # DIVA ontology files
-│   ├── diva.ttl          # Core OWL ontology in Turtle format
-│   └── thesaurus.ttl     # Controlled vocabulary
+├── ontology/              # DIVA files
+│   ├── diva.ttl          # OWL ontology in Turtle format
+│   └── thesaurus.ttl     # SKOS vocabulary in Turtle format
 │
 └── case-study/           # Example implementation
-    ├── data/             # Input and output data used in the case study                                    
-    ├── lifting/          # Data conversion scripts
-    ├── sparql-examples/  # Example SPARQL queries and competency questions
-    └── vis/              # Visualization components
+│   ├── data/             # Input and output data used in the case study                                    
+│   ├── lifting/          # Data conversion scripts
+│   ├── sparql-examples/  # Example SPARQL queries and competency questions
+│   └── vis/              # Visualization components
+└── website/
+    ├── images/           # Logos and illustrative images
+    ├── ontology/         # Ontology webpage components, generated from diva.ttl
+    └── thesaurus/        # Thesaurus webpage components, geenrated from thesaurus.ttl
 ``` 
 
 ## License
